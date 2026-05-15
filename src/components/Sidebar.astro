@@ -30,6 +30,22 @@ const tags = [...tagCount.entries()]
 
 <aside class="sidebar" aria-label="サイドバー">
 
+  <!-- サイト内検索 -->
+  <section class="sidebar-widget sidebar-search-widget">
+    <h2 class="sidebar-widget-title">サイト内検索</h2>
+    <div class="sidebar-search-body">
+      <input
+        type="search"
+        id="sidebar-search-input"
+        class="sidebar-search-input"
+        placeholder="キーワードを入力..."
+        autocomplete="off"
+        aria-label="サイト内検索"
+      />
+      <ul class="sidebar-search-results" id="sidebar-search-results" hidden></ul>
+    </div>
+  </section>
+
   <!-- カテゴリ一覧 -->
   <section class="sidebar-widget">
     <h2 class="sidebar-widget-title">カテゴリ</h2>
@@ -58,3 +74,73 @@ const tags = [...tagCount.entries()]
   </section>
 
 </aside>
+
+<script>
+(function () {
+  let index: Array<{ title: string; slug: string; excerpt: string; categories: string[]; tags: string[] }> | null = null;
+
+  const input = document.getElementById('sidebar-search-input') as HTMLInputElement | null;
+  const results = document.getElementById('sidebar-search-results') as HTMLUListElement | null;
+  if (!input || !results) return;
+
+  async function loadIndex() {
+    if (index) return;
+    try {
+      const res = await fetch('/search.json');
+      index = await res.json();
+    } catch {
+      index = [];
+    }
+  }
+
+  function escapeHtml(s: string) {
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function highlight(text: string, query: string) {
+    const safe = escapeHtml(text);
+    const re = new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+    return safe.replace(re, m => `<mark class="search-highlight">${escapeHtml(m)}</mark>`);
+  }
+
+  function renderResults(query: string) {
+    if (!index || query.length < 1) { results!.hidden = true; return; }
+    const q = query.toLowerCase();
+    const matched = index.filter(p =>
+      p.title.toLowerCase().includes(q) ||
+      p.excerpt.toLowerCase().includes(q) ||
+      p.categories.some(c => c.toLowerCase().includes(q)) ||
+      p.tags.some(t => t.toLowerCase().includes(q))
+    ).slice(0, 7);
+
+    if (matched.length === 0) {
+      results!.innerHTML = '<li class="sidebar-search-empty">見つかりませんでした</li>';
+    } else {
+      results!.innerHTML = matched.map(p =>
+        `<li><a href="/${p.slug}/" class="sidebar-search-result-link">${highlight(p.title, query)}</a></li>`
+      ).join('');
+    }
+    results!.hidden = false;
+  }
+
+  let timer: ReturnType<typeof setTimeout>;
+  input.addEventListener('input', async () => {
+    clearTimeout(timer);
+    const q = input!.value.trim();
+    if (q.length < 1) { results!.hidden = true; return; }
+    await loadIndex();
+    timer = setTimeout(() => renderResults(q), 180);
+  });
+
+  input.addEventListener('focus', async () => {
+    const q = input!.value.trim();
+    if (q.length >= 1) { await loadIndex(); renderResults(q); }
+  });
+
+  document.addEventListener('click', e => {
+    if (!(e.target as Element).closest('.sidebar-search-widget')) {
+      results!.hidden = true;
+    }
+  });
+})();
+</script>
