@@ -1,0 +1,51 @@
+---
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: Heading[];
+}
+
+const { headings } = Astro.props;
+const toc = headings.filter(h => h.depth === 2 || h.depth === 3);
+---
+
+{toc.length >= 3 && (
+  <details class="toc-wrap" open>
+    <summary class="toc-title">目次</summary>
+    <nav class="toc-nav" aria-label="目次">
+      <ol class="toc-list">
+        {toc.map(h => (
+          <li class={`toc-item toc-h${h.depth}`}>
+            <a href={`#${h.slug}`} class="toc-link">{h.text}</a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  </details>
+)}
+
+<script>
+  (function () {
+    const links = document.querySelectorAll<HTMLAnchorElement>('.toc-nav .toc-link');
+    if (links.length === 0) return;
+
+    const ids = Array.from(links).map(a => a.getAttribute('href')!.slice(1));
+    const els = ids.map(id => document.getElementById(id)).filter((el): el is HTMLElement => el !== null);
+
+    function update() {
+      const y = window.scrollY + 90;
+      let activeIdx = 0;
+      for (let i = 0; i < els.length; i++) {
+        if (els[i].offsetTop <= y) activeIdx = i;
+      }
+      links.forEach((link, i) => link.classList.toggle('toc-link--active', i === activeIdx));
+    }
+
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  })();
+</script>

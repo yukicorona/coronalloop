@@ -1,0 +1,138 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { formatDate } from '../../utils/date';
+
+const allEntries = await getCollection('blog', ({ data }) => !data.draft);
+
+const posts = allEntries
+  .filter(e => e.data.type === 'post')
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const pages = allEntries
+  .filter(e => e.data.type === 'page' && !['home', 'post', 'sitemap'].includes(e.slug))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, 'ja'));
+
+// カテゴリ別にグループ化
+const categoryOrder = ['大規模自転車道', 'CR・コース', 'カスタム', '輪行旅', '情報・日常', '自転車', 'IT/ICT話', '未分類'];
+
+const byCategory = new Map<string, typeof posts>();
+for (const post of posts) {
+  const cat = (post.data.categories ?? [])[0] ?? '未分類';
+  if (!byCategory.has(cat)) byCategory.set(cat, []);
+  byCategory.get(cat)!.push(post);
+}
+
+const sortedCategories = [
+  ...categoryOrder.filter(c => byCategory.has(c)),
+  ...[...byCategory.keys()].filter(c => !categoryOrder.includes(c)),
+];
+
+---
+
+<BaseLayout title="サイトマップ" description="ころなるーぷ 全記事・ページ一覧">
+  <article class="post-content">
+    <header class="entry-header">
+      <h1 class="entry-title">サイトマップ</h1>
+    </header>
+
+    <div class="entry-content">
+
+      <!-- Fixed pages -->
+      <h2>固定ページ</h2>
+      <ul class="sitemap-list">
+        {pages.map(page => (
+          <li>
+            <a href={`/${page.slug}/`}>{page.data.title}</a>
+          </li>
+        ))}
+      </ul>
+
+      <!-- Posts by category -->
+      <h2>記事一覧</h2>
+      <p class="sitemap-total">全 {posts.length} 件</p>
+
+      {sortedCategories.map(cat => (
+        <section class="sitemap-category">
+          <h3>{cat} <span class="sitemap-count">（{byCategory.get(cat)!.length}件）</span></h3>
+          <ul class="sitemap-list">
+            {byCategory.get(cat)!.map(post => (
+              <li class="sitemap-post-item">
+                <a href={`/${post.slug}/`}>{post.data.title}</a>
+                <span class="sitemap-date">{formatDate(post.data.date)}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .sitemap-total {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-top: -0.5rem;
+  }
+
+  .sitemap-category {
+    margin-bottom: 0.5rem;
+  }
+
+  .sitemap-count {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--color-text-muted);
+  }
+
+  .sitemap-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.25rem 0 1rem;
+    border: 1px solid var(--color-border-light);
+    border-radius: 2px;
+  }
+
+  .sitemap-list li {
+    border-bottom: 1px solid var(--color-border-light);
+    padding: 0.45rem 0.75rem;
+  }
+
+  .sitemap-list li:last-child {
+    border-bottom: none;
+  }
+
+  .sitemap-list a {
+    color: var(--color-link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .sitemap-list a:hover {
+    text-decoration: underline;
+  }
+
+  .sitemap-post-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .sitemap-post-item a {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .sitemap-date {
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
+  }
+</style>

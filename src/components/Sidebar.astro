@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import { toSlug } from '../utils/taxonomy';
+
+const allEntries = await getCollection('blog', ({ data }) => !data.draft);
+const posts = allEntries.filter(e => e.data.type === 'post');
+
+// カテゴリ: 記事数降順
+const categoryCount = new Map<string, number>();
+for (const post of posts) {
+  for (const cat of post.data.categories ?? []) {
+    categoryCount.set(cat, (categoryCount.get(cat) ?? 0) + 1);
+  }
+}
+const categories = [...categoryCount.entries()]
+  .filter(([, n]) => n > 0)
+  .sort((a, b) => b[1] - a[1]);
+
+// タグ: 記事数降順
+const tagCount = new Map<string, number>();
+for (const post of posts) {
+  for (const tag of post.data.tags ?? []) {
+    tagCount.set(tag, (tagCount.get(tag) ?? 0) + 1);
+  }
+}
+const tags = [...tagCount.entries()]
+  .filter(([, n]) => n > 0)
+  .sort((a, b) => b[1] - a[1]);
+---
+
+<aside class="sidebar" aria-label="サイドバー">
+
+  <!-- カテゴリ一覧 -->
+  <section class="sidebar-widget">
+    <h2 class="sidebar-widget-title">カテゴリ</h2>
+    <ul class="sidebar-cat-list">
+      {categories.map(([name, count]) => (
+        <li>
+          <a href={`/category/${toSlug(name)}/`} class="sidebar-cat-link">
+            <span class="sidebar-cat-name">{name}</span>
+            <span class="sidebar-cat-count">{count}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- タグ一覧 -->
+  <section class="sidebar-widget">
+    <h2 class="sidebar-widget-title">タグ</h2>
+    <div class="sidebar-tag-cloud">
+      {tags.map(([name, count]) => (
+        <a href={`/tag/${toSlug(name)}/`} class="sidebar-tag" title={`${count}件`}>
+          {name}
+        </a>
+      ))}
+    </div>
+  </section>
+
+</aside>

@@ -1,0 +1,197 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Map from '../components/Map.astro';
+import TableOfContents from '../components/TableOfContents.astro';
+import PostNav from '../components/PostNav.astro';
+import { formatDate } from '../utils/date';
+import { toSlug } from '../utils/taxonomy';
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface NavPost {
+  slug: string;
+  data: { title: string };
+}
+
+interface Props {
+  title: string;
+  date: Date;
+  updated?: Date;
+  categories?: string[];
+  tags?: string[];
+  excerpt?: string;
+  featured_image?: string;
+  slug?: string;
+  headings?: Heading[];
+  prevPost?: NavPost | null;
+  nextPost?: NavPost | null;
+  relatedPosts?: NavPost[];
+}
+
+const {
+  title,
+  date,
+  updated,
+  categories = [],
+  tags = [],
+  excerpt,
+  featured_image,
+  slug = '',
+  headings = [],
+  prevPost = null,
+  nextPost = null,
+  relatedPosts = [],
+} = Astro.props;
+
+const siteUrl = 'https://coronalloop.jp';
+const pageUrl = slug ? `${siteUrl}/${slug}/` : siteUrl;
+const primaryCategory = categories[0] ?? '';
+const r2Base = 'https://asset.coronalloop.jp';
+
+const breadcrumbItems: object[] = [
+  { '@type': 'ListItem', position: 1, name: 'ホーム', item: `${siteUrl}/` },
+];
+if (primaryCategory) {
+  breadcrumbItems.push({
+    '@type': 'ListItem',
+    position: 2,
+    name: primaryCategory,
+    item: `${siteUrl}/category/${toSlug(primaryCategory)}/`,
+  });
+}
+breadcrumbItems.push({
+  '@type': 'ListItem',
+  position: breadcrumbItems.length + 1,
+  name: title,
+  item: pageUrl,
+});
+
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: excerpt ?? '',
+  url: pageUrl,
+  datePublished: date.toISOString(),
+  ...(updated ? { dateModified: updated.toISOString() } : {}),
+  author: { '@type': 'Person', name: 'ころなるーぷ', url: `${siteUrl}/profile/` },
+  publisher: {
+    '@type': 'Organization',
+    name: 'ころなるーぷ',
+    logo: { '@type': 'ImageObject', url: `${siteUrl}/logo.png` },
+  },
+  ...(featured_image
+    ? { image: featured_image.startsWith('/images/') ? `${r2Base}${featured_image}` : `${siteUrl}${featured_image}` }
+    : {}),
+};
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbItems,
+};
+---
+
+<BaseLayout title={title} description={excerpt}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(articleJsonLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+  </Fragment>
+
+  <article class="post-content">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="パンくず">
+      <ol>
+        <li><a href="/">ホーム</a></li>
+        {primaryCategory && (
+          <li><a href={`/category/${toSlug(primaryCategory)}/`}>{primaryCategory}</a></li>
+        )}
+        <li aria-current="page">{title}</li>
+      </ol>
+    </nav>
+
+    <!-- Article header -->
+    <header class="entry-header">
+      {categories.length > 0 && (
+        <div class="cat-labels">
+          {categories.map(cat => (
+            <a href={`/category/${toSlug(cat)}/`} class="cat-label">{cat}</a>
+          ))}
+        </div>
+      )}
+
+      <h1 class="entry-title">{title}</h1>
+
+      <div class="post-meta">
+        <span class="post-date">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <time datetime={date.toISOString()}>{formatDate(date)}</time>
+        </span>
+        {updated && (
+          <span class="post-updated">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4.95"/></svg>
+            更新: <time datetime={updated.toISOString()}>{formatDate(updated)}</time>
+          </span>
+        )}
+      </div>
+    </header>
+
+    <!-- Featured image or placeholder -->
+    {featured_image ? (
+      <div class="entry-eyecatch">
+        <img
+          src={featured_image.startsWith('/images/') ? `${r2Base}${featured_image}` : featured_image}
+          alt={title}
+          loading="lazy"
+        />
+      </div>
+    ) : (
+      <div class="entry-eyecatch entry-eyecatch--placeholder">
+        <!-- CORONA_CHARACTER_PLACEHOLDER -->
+        <div class="eyecatch-placeholder-inner">
+          <span class="eyecatch-placeholder-icon">🚲</span>
+        </div>
+      </div>
+    )}
+
+    <!-- Table of Contents -->
+    <TableOfContents headings={headings} />
+
+    <!-- Article body -->
+    <div class="entry-content">
+      <slot />
+    </div>
+
+    <!-- Tag list -->
+    {tags.length > 0 && (
+      <div class="post-tags">
+        <span class="post-tags-label">タグ:</span>
+        {tags.map(tag => (
+          <a href={`/tag/${toSlug(tag)}/`} class="tag-label">{tag}</a>
+        ))}
+      </div>
+    )}
+
+    <!-- Prev / Next / Related -->
+    <PostNav
+      prevPost={prevPost}
+      nextPost={nextPost}
+      relatedPosts={relatedPosts}
+      currentCategory={primaryCategory}
+    />
+
+    <!-- Map: initialize all .leaflet-map-container elements -->
+    <Map />
+
+  </article>
+</BaseLayout>
+
+<script>
+  import { initLightbox } from '../scripts/lightbox';
+  document.addEventListener('DOMContentLoaded', () => initLightbox());
+</script>

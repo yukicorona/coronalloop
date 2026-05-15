@@ -1,0 +1,35 @@
+---
+// Map.astro: Leafletマップコンポーネント
+// - propsでconfigを渡した場合: 指定configのマップを描画
+// - propsなしの場合: ページ内の全 .leaflet-map-container を初期化
+interface LeafletLayerConfig { type: 'kml' | 'gpx'; src: string; color?: string; }
+interface LeafletMarkerConfig { lat: number; lng: number; label?: string; }
+interface LeafletMapConfig {
+  fitbounds?: boolean;
+  zoomcontrol?: boolean;
+  height?: number;
+  layers?: LeafletLayerConfig[];
+  markers?: LeafletMarkerConfig[];
+  elevation?: { src: string } | null;
+}
+interface Props { config?: LeafletMapConfig; }
+const { config } = Astro.props;
+---
+
+{config && (
+  <div
+    class="leaflet-map-container w-full rounded-lg overflow-hidden border border-gray-200"
+    data-leaflet-config={JSON.stringify(config)}
+    style={`height: ${config.height ?? 450}px`}
+  ></div>
+)}
+
+<script>
+  // window.load を使用: 画像等のリソース読み込み完了後に地図を初期化し
+  // 画像読み込みによるレイアウトシフト後のズレを防ぐ
+  window.addEventListener('load', () => {
+    if (document.querySelector('.leaflet-map-container')) {
+      import('../scripts/leaflet-init').then(({ initLeafletMaps }) => initLeafletMaps());
+    }
+  });
+</script>

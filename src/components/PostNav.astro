@@ -1,0 +1,49 @@
+---
+interface NavPost {
+  slug: string;
+  data: { title: string };
+}
+
+interface Props {
+  prevPost: NavPost | null;
+  nextPost: NavPost | null;
+  relatedPosts: NavPost[];
+  currentCategory: string;
+}
+
+const { prevPost, nextPost, relatedPosts, currentCategory } = Astro.props;
+---
+
+<div class="post-nav">
+  <div class="post-nav-arrows">
+    {prevPost ? (
+      <a href={`/${prevPost.slug}/`} class="post-nav-link post-nav-prev">
+        <span class="post-nav-dir">← 前の記事</span>
+        <span class="post-nav-title">{prevPost.data.title}</span>
+      </a>
+    ) : (
+      <span class="post-nav-link post-nav-empty" aria-hidden="true"></span>
+    )}
+    {nextPost ? (
+      <a href={`/${nextPost.slug}/`} class="post-nav-link post-nav-next">
+        <span class="post-nav-dir">次の記事 →</span>
+        <span class="post-nav-title">{nextPost.data.title}</span>
+      </a>
+    ) : (
+      <span class="post-nav-link post-nav-empty" aria-hidden="true"></span>
+    )}
+  </div>
+
+  {relatedPosts.length > 0 && currentCategory && (
+    <div class="related-posts">
+      <h3 class="related-posts-heading">「{currentCategory}」の関連記事</h3>
+      <ul class="related-posts-list">
+        {relatedPosts.map(post => (
+          <li class="related-posts-item">
+            <a href={`/${post.slug}/`}>{post.data.title}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+</div>

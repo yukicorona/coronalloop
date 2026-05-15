@@ -1,0 +1,105 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { formatDate } from '../../utils/date';
+import { toSlug } from '../../utils/taxonomy';
+import { r2ThumbUrl } from '../../utils/images';
+
+export async function getStaticPaths() {
+  const allEntries = await getCollection('blog', ({ data }) => !data.draft);
+  const posts = allEntries
+    .filter(e => e.data.type === 'post')
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+  const tagMap = new Map<string, typeof posts>();
+  for (const post of posts) {
+    for (const tag of (post.data.tags ?? [])) {
+      if (!tagMap.has(tag)) tagMap.set(tag, []);
+      tagMap.get(tag)!.push(post);
+    }
+  }
+
+  return [...tagMap.entries()].map(([tagName, tagPosts]) => ({
+    params: { tag: toSlug(tagName) },
+    props: { tagName, posts: tagPosts },
+  }));
+}
+
+const { tagName, posts } = Astro.props;
+
+const siteUrl = 'https://coronalloop.jp';
+const pageUrl = `${siteUrl}/tag/${toSlug(tagName)}/`;
+
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: `タグ: ${tagName}`,
+  url: pageUrl,
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'ホーム', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: tagName, item: pageUrl },
+    ],
+  },
+});
+---
+
+<BaseLayout
+  title={`タグ: ${tagName}`}
+  description={`「${tagName}」タグの記事一覧（${posts.length}件）`}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={jsonLd} />
+  </Fragment>
+
+  <nav class="breadcrumb" aria-label="パンくず">
+    <ol>
+      <li><a href="/">ホーム</a></li>
+      <li>タグ</li>
+      <li aria-current="page">{tagName}</li>
+    </ol>
+  </nav>
+
+  <h1 class="page-heading">
+    タグ: {tagName}
+    <span class="taxonomy-count">（{posts.length}件）</span>
+  </h1>
+
+  <ul class="post-list">
+    {posts.map(post => (
+      <li class="post-card">
+        <a href={`/${post.slug}/`} class="post-card-thumb-link" tabindex="-1" aria-hidden="true">
+          {post.data.featured_image ? (
+            <img
+              src={r2ThumbUrl(post.data.featured_image!)}
+              alt=""
+              class="post-card-thumb"
+              loading="lazy"
+              width="120"
+              height="80"
+            />
+          ) : (
+            <div class="post-card-thumb post-card-thumb--placeholder">
+              <span aria-hidden="true">🚲</span>
+            </div>
+          )}
+        </a>
+        <div class="post-card-body">
+          <div class="post-card-meta">
+            <span class="post-card-date">{formatDate(post.data.date)}</span>
+            {(post.data.categories ?? []).map((cat: string) => (
+              <a href={`/category/${toSlug(cat)}/`} class="post-card-cat">{cat}</a>
+            ))}
+          </div>
+          <h2 class="post-card-title">
+            <a href={`/${post.slug}/`}>{post.data.title}</a>
+          </h2>
+          {post.data.excerpt && (
+            <p class="post-card-excerpt">{post.data.excerpt}</p>
+          )}
+        </div>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

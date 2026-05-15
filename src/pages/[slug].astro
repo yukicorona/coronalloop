@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import PostLayout from '../layouts/PostLayout.astro';
+
+export async function getStaticPaths() {
+  const EXCLUDED = new Set(['home', 'post', 'sitemap']);
+  const allEntries = await getCollection('blog', ({ data }) => !data.draft);
+
+  const posts = allEntries
+    .filter(e => e.data.type === 'post')
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+  return allEntries
+    .filter(e => !EXCLUDED.has(e.slug))
+    .map(e => {
+      const isPost = e.data.type === 'post';
+      const postIdx = isPost ? posts.findIndex(p => p.slug === e.slug) : -1;
+
+      const prevPost = (isPost && postIdx < posts.length - 1)
+        ? { slug: posts[postIdx + 1].slug, data: { title: posts[postIdx + 1].data.title } }
+        : null;
+      const nextPost = (isPost && postIdx > 0)
+        ? { slug: posts[postIdx - 1].slug, data: { title: posts[postIdx - 1].data.title } }
+        : null;
+
+      const primaryCategory = (e.data.categories ?? [])[0] ?? '';
+      const relatedPosts = isPost
+        ? posts
+            .filter(p => p.slug !== e.slug && (p.data.categories ?? []).includes(primaryCategory))
+            .slice(0, 3)
+            .map(p => ({ slug: p.slug, data: { title: p.data.title } }))
+        : [];
+
+      return {
+        params: { slug: e.slug },
+        props: { entry: e, prevPost, nextPost, relatedPosts },
+      };
+    });
+}
+
+const { entry, prevPost, nextPost, relatedPosts } = Astro.props;
+const { Content, headings } = await entry.render();
+---
+
+<PostLayout
+  title={entry.data.title}
+  date={entry.data.date}
+  updated={entry.data.updated}
+  categories={entry.data.categories ?? []}
+  tags={entry.data.tags ?? []}
+  excerpt={entry.data.excerpt}
+  featured_image={entry.data.featured_image}
+  slug={entry.slug}
+  headings={headings}
+  prevPost={prevPost}
+  nextPost={nextPost}
+  relatedPosts={relatedPosts}
+>
+  <Content />
+</PostLayout>

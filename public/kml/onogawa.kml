@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>無題のレイヤ</name>
+    <Style id="line-9C27B0-3503-normal">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>3.503</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-9C27B0-3503-highlight">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>5.2545</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-9C27B0-3503">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-9C27B0-3503-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-9C27B0-3503-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>大野川緑陰道路</name>
+      <description><![CDATA[説明: <br>旧国交省URL: ]]></description>
+      <styleUrl>#line-9C27B0-3503</styleUrl>
+      <ExtendedData>
+        <Data name="説明">
+          <value/>
+        </Data>
+        <Data name="旧国交省URL">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          135.4360405,34.6925229,0
+          135.4367056,34.6927699,0
+          135.4383364,34.6940225,0
+          135.439581,34.6952751,0
+          135.4402676,34.6963336,0
+          135.4407826,34.6972334,0
+          135.4410401,34.6983801,0
+          135.4412547,34.6994915,0
+          135.441598,34.7002501,0
+          135.4421988,34.7009381,0
+          135.4429069,34.7016967,0
+          135.4432288,34.7027375,0
+          135.4435292,34.7033196,0
+          135.4439583,34.7039017,0
+          135.4449025,34.7043075,0
+          135.4467907,34.704378,0
+          135.4476061,34.7045368,0
+          135.4487649,34.7049249,0
+          135.4494944,34.7052424,0
+          135.4509965,34.7054894,0
+          135.4524341,34.7055952,0
+          135.4531422,34.7058069,0
+          135.4535714,34.7062479,0
+          135.461103,34.7167077,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

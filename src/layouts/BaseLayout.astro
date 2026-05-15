@@ -1,0 +1,102 @@
+---
+import '../styles/global.css';
+import Sidebar from '../components/Sidebar.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description = 'ころなるーぷ - チャリとゲームとITな日常',
+  ogImage,
+} = Astro.props;
+
+const siteTitle = 'ころなるーぷ';
+const siteUrl = 'https://coronalloop.jp';
+const pageTitle = title === siteTitle ? title : `${title} | ${siteTitle}`;
+const ogImageUrl = ogImage ? `${siteUrl}${ogImage}` : `${siteUrl}/ogp-default.png`;
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
+const gfUrl = 'https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap';
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Google Fonts: ノンブロッキング読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href={gfUrl} />
+    <link rel="stylesheet" href={gfUrl} media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href={gfUrl} /></noscript>
+
+    <!-- OGP -->
+    <meta property="og:site_name" content={siteTitle} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    <!-- GA4_PLACEHOLDER -->
+    <slot name="head" />
+  </head>
+  <body>
+
+    <!-- Header: logo area -->
+    <header class="site-header">
+      <div class="header-logo-area">
+        <a href="/" class="header-logo-link">
+          <img src="/logo.png" alt={siteTitle} class="header-logo-img" width="1240" height="200" />
+        </a>
+      </div>
+      <!-- Navigation bar -->
+      <nav class="header-nav" aria-label="メインナビゲーション">
+        <div class="nav-inner">
+          <ul class="nav-list">
+            <li><a href="/">ホーム</a></li>
+            <li><a href="/profile/">プロフィール</a></li>
+            <li><a href="/my-bicycle/">マイチャリ</a></li>
+            <li><a href="/large-scale-cycling-road/">大規模自転車道</a></li>
+            <li><a href="/sitemap/">サイトマップ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page content -->
+    <div class="page-wrapper">
+      <main class="main-content">
+        <slot />
+      </main>
+      <Sidebar />
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <nav class="footer-nav" aria-label="フッターナビゲーション">
+        <ul>
+          <li><a href="/profile/">プロフィール</a></li>
+          <li><a href="/my-bicycle/">マイチャリ</a></li>
+          <li><a href="/large-scale-cycling-road/">大規模自転車道</a></li>
+          <li><a href="/sitemap/">サイトマップ</a></li>
+          <li><a href="/privacy-policy/">プライバシーポリシー</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">&copy; {new Date().getFullYear()} ころなるーぷ</p>
+    </footer>
+
+  </body>
+</html>

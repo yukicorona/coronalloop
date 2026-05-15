@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>無題のレイヤ</name>
+    <Style id="line-9C27B0-3311-normal">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>3.311</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-9C27B0-3311-highlight">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>4.9665</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-9C27B0-3311">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-9C27B0-3311-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-9C27B0-3311-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>西島川自転車歩行者道</name>
+      <description><![CDATA[説明: <br>旧国交省URL: ]]></description>
+      <styleUrl>#line-9C27B0-3311</styleUrl>
+      <ExtendedData>
+        <Data name="説明">
+          <value/>
+        </Data>
+        <Data name="旧国交省URL">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          135.4347315,34.706636,0
+          135.4339591,34.7060715,0
+          135.4331866,34.7053659,0
+          135.4325429,34.7046603,0
+          135.4322424,34.7042898,0
+          135.4325214,34.7037783,0
+          135.4331008,34.7029315,0
+          135.4331651,34.7020495,0
+          135.4331866,34.7011145,0
+          135.4324785,34.7006206,0
+          135.4321781,34.7003912,0
+          135.4318991,34.7000737,0
+          135.431985,34.6947106,0
+          135.4330149,34.6923464,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

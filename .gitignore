@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+*.log
+
+# 画像は Cloudflare R2 で管理（git には含めない）
+public/images/

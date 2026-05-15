@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>93</name>
+    <Style id="line-9C27B0-4000-normal">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-9C27B0-4000-highlight">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>6</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-9C27B0-4000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-9C27B0-4000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-9C27B0-4000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>93.大和中央自転車道</name>
+      <description><![CDATA[<img src="https://lh3.googleusercontent.com/umsh/ANkjSgFGvbdIpc6ixQ9gxg5OMiE_QbBRA7cU8zwXee_2DsJeD21Gj33uWdxFKGXZudokolK64xyP-N7NoxdDe49vmHdnQiOp1bSZ4s-_3bnZik8fhwM39yUr14_aJ-gjCvTWib4TZY02Bxed1lSIqeD0BGrqGM4VWqKkp9EZVcLMyQYTAU0ett9M1RGipV5fKCtojAeRtL2gdfY5MBaL5QZInrtrEriDsTI9128xPntMi-pAshBtjGVTNEaHo5vfVUAQwFxCBQifC33nUl6xXGGHGjdQNZxi3ueEa5CIkgiciplgJSmeTuSG7i-lH8qWQ7TWSkM0Lo-p2ElZ-BjSHTaDq_HPEMmA9Ffep7N3O4k8shqU52rPS1_Ihs0IMNuayCF9cikhaHKqBK4UfEwRuCNL92XMrsg7kAfRcfE8IgxXDvG4OiLY7LBa6nCLAyP7CmP3V5m61vc_3ItFwglUrLtczBk_BihcCBEDVPmdxmhZhUlVmz3b4n-Blq0MtRiz0iHlH8vHU3LwVS-N_xLzfMuRs3a2mx18Dxg-tCN6vttbfUavNRg38_dohmymCDZGGBizwn-IvpEAtS5LRiQqUxlRDYZcUcXbW107XTu7ymeQW1NDnniGEmyaRY4GUMfsnNT4IVDy04i7kcr5sr__lBX11dSR8MuPUQJ6x-p3bVrJjzyuQMh3cWXhzaOO0lETLe6NlArCaFXiUQ0MfnyzgcKFUlitnU6DtKK1klIN-IHHMBuVAfre3GPCXVuPMrfeOL--zStwgSSK89E3EgYQeRlVkWpZq4Q2qiFqJreC57F1YVHYA2YxjxNnPFzTS5saWKlLqvMUqZAgIxqXEtTlBFHwNp8IgrMWzpOz" height="200" width="auto" /><br><br>説明: 約21km<br>奈良県道273号大和郡山田原本橿原自転車道線<br>旧国交省URL: https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/06/093.html<br>Wikipedia: https://ja.wikipedia.org/wiki/%E5%A5%88%E8%89%AF%E7%9C%8C%E9%81%93273%E5%8F%B7%E5%A4%A7%E5%92%8C%E9%83%A1%E5%B1%B1%E7%94%B0%E5%8E%9F%E6%9C%AC%E6%A9%BF%E5%8E%9F%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A<br><br><img src="https://lh3.googleusercontent.com/umsh/ANkjSgGZ3KnHW0OhAeuTyr8_9apxYATJwMvGVVQE4KIDkB2JmiGW707-9Pd2yTo-254oCCc4ph10JqRdpnu3-9uK5N2WtjBPIKFeMKdYQI0WWZCucUc5PJJ3YN4g0Hh0wautnQgJkOts03-LJoYfNbs4ZWMRXSUn3xurXn9vdCSBzS5QVFha9unkEOz8p0bKfV01tCxZzwRv7l8ZO4oXDr4uL7xyLrUEJKqGf7WyUnCBe3zuVNMS3gHRcBsDDEw89lfXNbQov19hZz5AIoAM4y7XLJ2FrhZYcGoMjPCJDtkI9mQc3QxXJ1eGt8mKJT_2szDq5KWAJbJmxY--3VZnxwMw6O70odsCThCKXhfy-VEQOJdM23CGFtlcmoMd3XSHqPyEz6xMIGFxyKy5S9_-slBOMce1IimEBbU3tz5pPq8PzTiBuG9KbnMS8gf2KTuMMeSWX-JeryoaoJUbcLG9_dufuWb8VvrI0P-k6DUpBHlhXqPjui8Edq4vceP2d5wdIWpJaVgkTdJ5ksa-_dRgwgTZZj-wbrx4oX1MPvnDPmgqXZBwletYCgYaglCzDMtrxYQrxGi9Iad90_WdZ3wfuzlkySYi2W8wY67_yvKSoodOQDZ8qZT02NeGhaYnqoE_Lug9lskW5RCusdmv5Hc6viqul3dVer6LXRm9qAbjwsMIT0-Q78CsVv8pI5h8iTfHHAL3Xh5HnhSDRzhRtkPK9y4T2h-kNjX0Q7LgKS1r89AQRAzaHfHFHbkqurXkFYDsCT8vGFCn_UiM85Od3PSxBvTVuDDeCmpKIlhi_xWvbHwGlf8XcHkvpNS1zckbroNRg5d6hOjXgTuLxwDL4faWyfREKOb5VomR0c2m" height="200" width="auto" /><br><br><img src="https://lh3.googleusercontent.com/umsh/ANkjSgFqiRJor4LPenXmfLuxc3oO5M5kXvvsOYIm1OOQqSawbjNw_kAsWeMwjCYT55DW6nR4jcXylLXq_G4DTD4Ft3evJDhdoZpmiODIMec0MRnHRFOV6EJCdfGWSAQLpNMIZdJhIfK7qEjfkqOEnc6tdNgb6QnSCKgK2VotU_ANZs5mC670DGxcPjIZ4sgTHJpOmIrz3PZ5pWSLgsLbtWFFBm--AOrCBpu8lrEYxCjy4colix-711iu6KXm6pg8lWJikgs0CGXerrTPDSMHxQlqrUoyYgVNZ6LiaOB4yyrWM6aNblyJ8J8jS4iBCPwYvajEq9DlCisEMRT9M6hrWls8m9dt2i0GBJr9OVHcNb8E2V9vs-URsQ7UShyM0_OZCSWr4FXJL1Vf80Tr3emGJB9sFB2ncix5LeL3Mu2yZG0fdoqW_sedjQU57fcS-OCGYLPFmK3w0nQlb14flqqpK20Wf0eZsEzTpvbewae-jZ8xPMX_VpVwVXfwiXvefl9Nk1mp_LKJ_voFdmXSKXK4PnsZskp0bNmm8B1kbOmLsBHJhOlZHGF4-jwVCZ2WXiXFp4gjfLVC0gjjrRZB8X6EyMmmUcciXwchNhAFPUim_po7qgCclEOmTY11SzJ1C4LayaREzzNfO66J2OTUXGSaoY_pNZrKfvJSXSv3QHCkrGY7yHKFiEFtt5y6LExr8LUg_7TkMUPSJhyzQLB9zH-3D3fkU72KhzaxnNsIsX1moJnj3D4QgReOE0KVVD3ZDrOc4eizTEx-QIu8wICUJqAeV15FUZGi45QXRK3vz47S8yBHQvrnSWPXp5sN_2I15jDUp5l-8KcqDk6_RRbdk53ee8SgLeqkszh9q3M" height="200" width="auto" /><br><br><img src="https://lh3.googleusercontent.com/umsh/ANkjSgEXMoXg3lJ2Z6wE5utjpmBk0B5QHXPKWxEyQnWSpM8O52KUOUaA0sNi6Yg6DCNFi0gH83CToc35WcGFGzid-VKTUAauV_efofd2yEjn4SvQZw_89nYiSzIlaGAdJIcVmxH6kqVCMEHFiNiiI8fM68IZ4IsIvw9VOdrTJyFwO3dIi-0tPNFTa0ROHQaTa8UtnCJmKRKh9UnL4yQbqOXOl-u6YOehBiAa_EWrrxgGkmGzCSpY9YZcLD0dHNhuuLnJen_VQhzPg9BLikJSJbz30lrbQl52eEWUg6HT4rgHY29oU8nupkUzvUJ1UkjJy_Hcp1fvPMX7H2a1LIhusxVhdpq6cv7KEfCO-qunIXXsY9WQsh7DB72P9mz0eNbxQ9XUCZYJiMAfujuOTegxPOnU0EKrfAZ3FrM_7GWG7O5-6dT81J8ac8s7OP3F8-9cHSMoXo9_o9VAcfcIG9Bs3yMSgDQPhR0AEeNPTltZLAz9OjUsMz9ic5WLidGtHMHQM_AN72gTar_q6U4jDEpZMhv92KtNn6IynOd7IYbsDY9BtBM8xlATfqXjn6iKCaPp9HqNcZYKK0uKWCNHpUOltMAb5mJjGf0QGmd3Alxx8XpAQyjoa7wvhtwRJOHuNwwiZvYY2gyWX88_l_5U513yI6Lle95CGJPJsrJAAqeBgNprczN82a1uHHS1Z0N2wPQrI0vYjj4kVGp-b0-28fprv64MH4NUC2Ajslqrg3oTNUZGGoVeJWjdpnz360mKVcp163aOVYrWHHbNzF7FjcQUwLAZ2a_9J0tlN9EctHOnlgnsIlX4lnZPNvvHjbw_29MfeTmvwqzZ5zINnduYv45fbbT_XqWNBFQ7kYWb" height="200" width="auto" /><br><br><img src="https://lh3.googleusercontent.com/umsh/ANkjSgGFhG7GXcD-f-dWtLMdS1gJQxphYrVAPgSBNqvXlDsInr_DOhuFP85-67_ptQCAzwAZezcTlVlHBNhVJ17A3CCf20d4hAnT8Bhx0rMSFvAe8KlzNWyCaLlQc4n5TvP4gjCXBVqsu2SY_UsGdxNsRsjOY283Sum93P05YFlwFoiA7O4wv_qxuKQVUwASiLUrvtjCDh5JP_lQHZ4JJW6UhZfFi33-vabxTS7BQob6Cfm0YQI4X1BIMa9g7PaOjrtbhphqtPWgTXCc1noXhN9tr5Vs3KyB_vabp5De_Eiyd9WmZc87hZK6NAvP8SY3hGwuioEq2-Mq80HZMKf3USEk-FeoRgpKv3wtUXxJixZ4TbHCGo7aJzRK8Zar5zXpRKQTavLgU3NYwh8SlIFIIqB6VVGHUgkfI_DaQTTmgDSwZH37YL-Kt6KJXlgp2vvyJDYHXgbhaOkh3blhYNdh2mMUrk9HLWSJxxfjpzh7DWyl-fUsTisoCWyUq_zcmuP3a0waewxWzgsV-M-DvjY_Aly8EbWMb9AB9Yjmr-m2rgbHbxmGhRVqdtbtAxOW68hy8qmY5N6Yh8flEuoNCFAV-Ob0_crhtoRN_PYpIaNl3PWtRPOCWsYqd0QFBVx9dI9Tyzvh9GA0weYj73VdutrpEY1AF9ESTMYcBLVX7Pqg4wG_WAlrbCuP_ZTT3FD-XIhCg7KdpIDAecMy5BOXotnJa0Q26alPhF46tTS8lbTC9bgKcuLm7jiVibQpPC8G77xeNCRhrsLCkmfWSGx9WICoYVozSAevMzmYTSzdhbiIitLBw5nDsXO3pf2pFvHTzpXaZfQTOyl5c7-sBVcbgXJl5W4pqE__PHRJ3cOp" height="200" width="auto" /><br><br><img src="https://lh3.googleusercontent.com/umsh/ANkjSgGvpr9mMD7A5aNbQhxRgBWeoWEdKjFxL9KIT6ySPf4NaFG7DHYpuxnhKzhwN5wVIdyG4cmf5gvtRz5FruNmiIAt-B0jPggKkEuekDypqUJpihQHu4y0fpVU5TrlJCvPAYG520_h-u_nOViEob4kJcKd7SCpUKHbXoZQg7ar347sDuqezA8Ta1Y3D81GUVdJpMjd5NGYJOLeBrmxtl1kvDrlfBCQV8w-SG1Q-Tlv4L2TjNSreUME43sk7bjtyqvAFiUWYI3PpnaPqvfbANin0pgnEEV3iOVeLcZIgBChgkNi7yq0ylutpt8C_Z3QQoX2at9nd348WszzFvK82lzOMU4B64xS4V2i9pGTkA5InfT78FTMqfF5tbzFOqHAPaavJXYBWqTaVnMN4JDP6sEJvJYNKNtEuL910dD0-yjNIXQ3MOyp-8NcejRqJshZUffOGyPj8Kn2yFO-UVO30mYU4kPs42kltjHtzFl-Qzhwb0U_umEaInOaRVj1HMW0hwzK3ghh5OoQHvQkFMiCKohThsSrE1um9qWIwK8PMEKe_UJDC7OiEhhoBR3kFF-fnxm0uyYmFNQYgyLO21MbQ0pgbEuczuLjTE7DeAH-SwfKcpxGzZHzKgUa2AtU5H4KIPoZ93TLDFZAB8Qzx29a6FAskRvt6lXswu1Km7PRSd0P32AjzaM91gbIECc7_jpGzIB5TtMjgFNLhMgi8sde1snlbHagfYp1NfghGaZp9brfpSJX-QlEKsvMiLc8lhWroipvFQVDNAGFfjr7VZF3FNQ98mcs1DQhHWHj0mO3KieyOLyjSWDsplBbNLMQQoty-27zF6bAANFdDP5Q8Cfu8r82j30_POXs14Pb" height="200" width="auto" /><br><br><img src="https://lh3.googleusercontent.com/umsh/ANkjSgHNgjyVMxVsnpfSilt_aQTOfmQIJLnVdl1l9ZZjd0X7a-2F70IrqayhBtpYPwF_tVCEoYslcS0PplIJUNbZt1bSBjCr_s18vdLy5Ramv4E4roNFxeSnty-sKcUKMyz-7x_MMmWKu5PKDxJJc6mW0BOnJtCASBwMaaA4AcVbTYdDanlpSxxYmZhhnxb4q6GTATnn4eOcZZVjBe-Sl2vCAjeBvoWBd7a-NoYMpkqItlnQJdtr-iwZUmShtxGdIW13pb1qTSgGmtERUgKp22zqsn3BnrIbuNNiq8D26bYZrZU8fUBeSmmVzQFXCxRTfqU6__QYc2-lzbtdyxrXbVJAEdEWf_oJIRL8BjNssOtToWNWT9GrokM6bjdxPmLvvldE5hKuhMRxqblt-eRR1bnPn707_H9r6fgeJm_F9KhqH8YvxmC8MQwpE725ImrLtOjNCDlRKgNSdmSJ2J-lcumuBAQFx6vqjdljiREFVVceEV2mZXoCM4xm6CDXANo7DQwn6qXt6UFlCJFN4gJ1QXo6F7p6qFEUxEoVtmWJZExK9CXoBNacDPYM5gamKl8ddqZD_e1o2T7OrMptRwgO8h4L21Lho-u3sxGuTI2YllW2G60MslN1TmBL1A1Pj1PDxVyjoh0GEjC-_m97voEF0JgbF1snkVAOId5AlzyWXZ05wFiNsqCjq54167cF9tIW0eP37y6emAXwvqb_qzcwDOpSDWc3u1YGt3hA-zxyTmgMqI30t5r1WtHY7jKTxkFxGYSRKyArwBWy2tJh38mWD54E3Ja3BXh-OENmC3mC75052OBfMIKYMZKbDPq_cekh6H0YfUZZqS-qirloaIYukje0ilNJ9vKILzBs" height="200" width="auto" /><br><br><img src="https://lh3.googleusercontent.com/umsh/ANkjSgHGJNMi9Noni7xQ2EKBDObACjqTvifX-PRpbHTS4hMHgq9WMu_WdvAKsVdcX2zm23YpMDa7lBJtBGjERxK_PUP_uXKvUgchiYH6U7DfbWiCQ-063LNODb_2VP5gx2uciz15HhQ4qyf5rwtTspOOrM8pOk_vdGPTYGhXgfo3tqTzmzYufMFxYJQMZw_U4lwIprMST72V67eHLXZbOq7Cmtl0ntdiY6MhsG1__qyezmVy_tGrCdyyjAwDOjtP_L94zOtcTSUjOCz82VriRCHC_NH5a69jWcH7UER3dDsqqvEEWIP_SQxFtKtPP5P_cBClf3vk1f_av1zbWDG-8xEAZ8DCQlQdhIutT_D9ensx4rrgz9ClGZK7hl3B_Dqh6SwUKlqd9_JE0GDkcBcWG9KbGihvnNC_NVMpQ0WlFl4QzSNoF-kbCJdubJEM49LqYGUY81rgxujmg09vyqF2ze7ZpsZ-nuKv9FJj_JnsIhZoGHpBFOOi0ltBWZbdedSAleewuHmAlAIxTXy1f3f1jwJFZuF2rGCwn1k5DvxFugfwJDema7hYv4P_8XhgnismtARjBpjKBzm3_AKC8Gen7kyf0u4y14T1QzkzoUqfNhjc-yDIZfQZMH5-IbGYLhlCDSus71vKtQS976ejg7yky05urebkZZQOKC6uVcdA6kHwoI-RuiplVCU3inOavJNvmbk1Uht9cE8QJXjPByYuL0ADpNvoSiQfNxu_gT4wkPy8xmBk4xdAyhJtC4RO1f86czKz7CtvmRUX97FT9gZAiPJZLGLhurbJk8ObzvtdOPC_3jSlgzUeBs509VCzhPknZqJd1s5Vnlg-64ObVnVbcuW6nlvHHcKJE-jt" height="200" width="auto" /><br><br><img src="https://lh3.googleusercontent.com/umsh/ANkjSgGR8hN6hOmi_uZJnRwShy5whJ6bjP6xR2kBQp9UdgxszikJ-jmqcfPFE6pBrZgsqJs5pmXDbRP2411821JnZPYumxgVcb7IssGYpL6uhTLqCyf73p9pV9unbhftMvdz8BJcJYa_TxJfhJdXtg7Jq76BEn6UzykWcttfjlaqbYzji3q0BiDlCRPc3wPgLYqdEJ9rL6FNmRRHfobPp08FDpcmakLpmdUfM3LU9rPix0UdPd354kolVBV2mfsho8g2RFx_0qikj7p0samdaIseR59eZ6_T7aDpKrvUjjM9bGXiRybxfMmePENOZ03D5rcenfOa-sq2y4EmujoDtcgE2uVmHhoJDoplcL0LSGbp-j-payIW95h-8qYLEDPwhOL0NPuJ-F39HAJDCaOIt2UHize_mDvSEJmXfF0xxrC4rx-upYMJYGSnb3TYjNDuvRFR4rM0APfGxGeYenDIYlFC3TI3uBETgbRFpyADQOGNnceO2zeVlA0k0DLLn6eJJd7Hsm8lQtqI8wRwKMcgkyC4qUx3fy5LTIitoUFaRqLOIm4pCYWOaFxku8H6c3P3dJ-7rAmeUR9gf2zYdH4ZBg87nwgRv-YuJe8hGTiUvEzNFAId2d2hGjcd8se95PxIPFY8lsrVeq35R8ujVPvmKyg9tBcqWAP1sex2BUT0u49RQkfj0DFJ6aAAhyAxxy03hT6_LIcDupMpyrTuj2e8yqiuWEvA07H-j0q-Lpi0czBBGYWyzuTu4qxn124HZRXkiwuFZjQzOXt15IZYIudXecBHQVInpkKqdDqjzvCgGl9Bbdk_krlD4fmOO-7oFr5ftTM8--1QvJE9Oju1lxj4qePB1qae4ZgseFVI" height="200" width="auto" /><br><br><img src="https://lh3.googleusercontent.com/umsh/ANkjSgHsPkJWxhPpYVBKF3rj9C2QlVhlZ_Q0c18NF_NnVPf8Sfa5CBd3J7CvU-v3FTftoh3WUbx0KU8TKFdyoCr81V4h7Zv57uKtP8YOhbx0xTrvgQIhnCOtFJWx2gxNcgsAAhYPbUiA2TlMzyZw-lYUmaI0aKSUF4HfEGh1e91zzI4EPwOVGOK947T7C7xyKp_TdnqX4RsAL4_jKXh3kyOYZ8wRNHvTQI6k-q8uOXLcrKyPR9I1bktONvWXK0RmdA7NTtO1KLhx1DzZnVuxdELrPlBgE8P6N6Rt0N6VweyIpYrnqgjfgTskyFu-YA04MhoYgEraY1J3gHRNRXpuOGx4cjrcFNiIchIvxQsNEGTTkSUpMPWF9dPc6zh6ap9YA4UPYVsTx7Ug22-_pCe3wB4BBFDq-AMoLQhYU35h9EBG_x7_d7iy441lyAtpGbgGh433qqZgLiLafMz69PkiPNAElzLGO3nEKb-v-Vb751EfxdWkYsd3GWfz-PnAxd5ENNF20GFDIK8D9mW4g3VGDwt9oeKUQ-kAlWV1ykt8GqPoe8n-1IK-nlErIPPqh58pL3skMsj4dKlkqDiz3Z-8mC0Db362ittrPhfmqoZt1Uw3WbCjRley8kfjqok9UU9kdeI-eGNL_ex5D_N_N3i7Z-uofCSpbqy8vmj-TR7hlIUJ2_3Q7GnjLtJnqVXNSFxCi5Rbn4eeYV6S_tzpOFrYbZ2lN078IlIMpanivysAc8HzD0V5cX25im3TmEAbA7P7vujRZT-Om-s092qXy0jWfc37IKOTHQmMf5rDzs26h70lzZVgPvoFVMfPB5ZmoTFcwOtvZB32cvQ3_Y1YZZHcmhWkI6R5ilTkfZG1" height="200" width="auto" />]]></description>
+      <styleUrl>#line-9C27B0-4000</styleUrl>
+      <ExtendedData>
+        <Data name="説明">
+          <value>約21km
+奈良県道273号大和郡山田原本橿原自転車道線</value>
+        </Data>
+        <Data name="旧国交省URL">
+          <value>https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/06/093.html</value>
+        </Data>
+        <Data name="Wikipedia">
+          <value>https://ja.wikipedia.org/wiki/%E5%A5%88%E8%89%AF%E7%9C%8C%E9%81%93273%E5%8F%B7%E5%A4%A7%E5%92%8C%E9%83%A1%E5%B1%B1%E7%94%B0%E5%8E%9F%E6%9C%AC%E6%A9%BF%E5%8E%9F%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A</value>
+        </Data>
+        <Data name="gx_media_links">
+          <value>https://lh3.googleusercontent.com/umsh/ANkjSgFGvbdIpc6ixQ9gxg5OMiE_QbBRA7cU8zwXee_2DsJeD21Gj33uWdxFKGXZudokolK64xyP-N7NoxdDe49vmHdnQiOp1bSZ4s-_3bnZik8fhwM39yUr14_aJ-gjCvTWib4TZY02Bxed1lSIqeD0BGrqGM4VWqKkp9EZVcLMyQYTAU0ett9M1RGipV5fKCtojAeRtL2gdfY5MBaL5QZInrtrEriDsTI9128xPntMi-pAshBtjGVTNEaHo5vfVUAQwFxCBQifC33nUl6xXGGHGjdQNZxi3ueEa5CIkgiciplgJSmeTuSG7i-lH8qWQ7TWSkM0Lo-p2ElZ-BjSHTaDq_HPEMmA9Ffep7N3O4k8shqU52rPS1_Ihs0IMNuayCF9cikhaHKqBK4UfEwRuCNL92XMrsg7kAfRcfE8IgxXDvG4OiLY7LBa6nCLAyP7CmP3V5m61vc_3ItFwglUrLtczBk_BihcCBEDVPmdxmhZhUlVmz3b4n-Blq0MtRiz0iHlH8vHU3LwVS-N_xLzfMuRs3a2mx18Dxg-tCN6vttbfUavNRg38_dohmymCDZGGBizwn-IvpEAtS5LRiQqUxlRDYZcUcXbW107XTu7ymeQW1NDnniGEmyaRY4GUMfsnNT4IVDy04i7kcr5sr__lBX11dSR8MuPUQJ6x-p3bVrJjzyuQMh3cWXhzaOO0lETLe6NlArCaFXiUQ0MfnyzgcKFUlitnU6DtKK1klIN-IHHMBuVAfre3GPCXVuPMrfeOL--zStwgSSK89E3EgYQeRlVkWpZq4Q2qiFqJreC57F1YVHYA2YxjxNnPFzTS5saWKlLqvMUqZAgIxqXEtTlBFHwNp8IgrMWzpOz https://lh3.googleusercontent.com/umsh/ANkjSgGZ3KnHW0OhAeuTyr8_9apxYATJwMvGVVQE4KIDkB2JmiGW707-9Pd2yTo-254oCCc4ph10JqRdpnu3-9uK5N2WtjBPIKFeMKdYQI0WWZCucUc5PJJ3YN4g0Hh0wautnQgJkOts03-LJoYfNbs4ZWMRXSUn3xurXn9vdCSBzS5QVFha9unkEOz8p0bKfV01tCxZzwRv7l8ZO4oXDr4uL7xyLrUEJKqGf7WyUnCBe3zuVNMS3gHRcBsDDEw89lfXNbQov19hZz5AIoAM4y7XLJ2FrhZYcGoMjPCJDtkI9mQc3QxXJ1eGt8mKJT_2szDq5KWAJbJmxY--3VZnxwMw6O70odsCThCKXhfy-VEQOJdM23CGFtlcmoMd3XSHqPyEz6xMIGFxyKy5S9_-slBOMce1IimEBbU3tz5pPq8PzTiBuG9KbnMS8gf2KTuMMeSWX-JeryoaoJUbcLG9_dufuWb8VvrI0P-k6DUpBHlhXqPjui8Edq4vceP2d5wdIWpJaVgkTdJ5ksa-_dRgwgTZZj-wbrx4oX1MPvnDPmgqXZBwletYCgYaglCzDMtrxYQrxGi9Iad90_WdZ3wfuzlkySYi2W8wY67_yvKSoodOQDZ8qZT02NeGhaYnqoE_Lug9lskW5RCusdmv5Hc6viqul3dVer6LXRm9qAbjwsMIT0-Q78CsVv8pI5h8iTfHHAL3Xh5HnhSDRzhRtkPK9y4T2h-kNjX0Q7LgKS1r89AQRAzaHfHFHbkqurXkFYDsCT8vGFCn_UiM85Od3PSxBvTVuDDeCmpKIlhi_xWvbHwGlf8XcHkvpNS1zckbroNRg5d6hOjXgTuLxwDL4faWyfREKOb5VomR0c2m https://lh3.googleusercontent.com/umsh/ANkjSgFqiRJor4LPenXmfLuxc3oO5M5kXvvsOYIm1OOQqSawbjNw_kAsWeMwjCYT55DW6nR4jcXylLXq_G4DTD4Ft3evJDhdoZpmiODIMec0MRnHRFOV6EJCdfGWSAQLpNMIZdJhIfK7qEjfkqOEnc6tdNgb6QnSCKgK2VotU_ANZs5mC670DGxcPjIZ4sgTHJpOmIrz3PZ5pWSLgsLbtWFFBm--AOrCBpu8lrEYxCjy4colix-711iu6KXm6pg8lWJikgs0CGXerrTPDSMHxQlqrUoyYgVNZ6LiaOB4yyrWM6aNblyJ8J8jS4iBCPwYvajEq9DlCisEMRT9M6hrWls8m9dt2i0GBJr9OVHcNb8E2V9vs-URsQ7UShyM0_OZCSWr4FXJL1Vf80Tr3emGJB9sFB2ncix5LeL3Mu2yZG0fdoqW_sedjQU57fcS-OCGYLPFmK3w0nQlb14flqqpK20Wf0eZsEzTpvbewae-jZ8xPMX_VpVwVXfwiXvefl9Nk1mp_LKJ_voFdmXSKXK4PnsZskp0bNmm8B1kbOmLsBHJhOlZHGF4-jwVCZ2WXiXFp4gjfLVC0gjjrRZB8X6EyMmmUcciXwchNhAFPUim_po7qgCclEOmTY11SzJ1C4LayaREzzNfO66J2OTUXGSaoY_pNZrKfvJSXSv3QHCkrGY7yHKFiEFtt5y6LExr8LUg_7TkMUPSJhyzQLB9zH-3D3fkU72KhzaxnNsIsX1moJnj3D4QgReOE0KVVD3ZDrOc4eizTEx-QIu8wICUJqAeV15FUZGi45QXRK3vz47S8yBHQvrnSWPXp5sN_2I15jDUp5l-8KcqDk6_RRbdk53ee8SgLeqkszh9q3M https://lh3.googleusercontent.com/umsh/ANkjSgEXMoXg3lJ2Z6wE5utjpmBk0B5QHXPKWxEyQnWSpM8O52KUOUaA0sNi6Yg6DCNFi0gH83CToc35WcGFGzid-VKTUAauV_efofd2yEjn4SvQZw_89nYiSzIlaGAdJIcVmxH6kqVCMEHFiNiiI8fM68IZ4IsIvw9VOdrTJyFwO3dIi-0tPNFTa0ROHQaTa8UtnCJmKRKh9UnL4yQbqOXOl-u6YOehBiAa_EWrrxgGkmGzCSpY9YZcLD0dHNhuuLnJen_VQhzPg9BLikJSJbz30lrbQl52eEWUg6HT4rgHY29oU8nupkUzvUJ1UkjJy_Hcp1fvPMX7H2a1LIhusxVhdpq6cv7KEfCO-qunIXXsY9WQsh7DB72P9mz0eNbxQ9XUCZYJiMAfujuOTegxPOnU0EKrfAZ3FrM_7GWG7O5-6dT81J8ac8s7OP3F8-9cHSMoXo9_o9VAcfcIG9Bs3yMSgDQPhR0AEeNPTltZLAz9OjUsMz9ic5WLidGtHMHQM_AN72gTar_q6U4jDEpZMhv92KtNn6IynOd7IYbsDY9BtBM8xlATfqXjn6iKCaPp9HqNcZYKK0uKWCNHpUOltMAb5mJjGf0QGmd3Alxx8XpAQyjoa7wvhtwRJOHuNwwiZvYY2gyWX88_l_5U513yI6Lle95CGJPJsrJAAqeBgNprczN82a1uHHS1Z0N2wPQrI0vYjj4kVGp-b0-28fprv64MH4NUC2Ajslqrg3oTNUZGGoVeJWjdpnz360mKVcp163aOVYrWHHbNzF7FjcQUwLAZ2a_9J0tlN9EctHOnlgnsIlX4lnZPNvvHjbw_29MfeTmvwqzZ5zINnduYv45fbbT_XqWNBFQ7kYWb https://lh3.googleusercontent.com/umsh/ANkjSgGFhG7GXcD-f-dWtLMdS1gJQxphYrVAPgSBNqvXlDsInr_DOhuFP85-67_ptQCAzwAZezcTlVlHBNhVJ17A3CCf20d4hAnT8Bhx0rMSFvAe8KlzNWyCaLlQc4n5TvP4gjCXBVqsu2SY_UsGdxNsRsjOY283Sum93P05YFlwFoiA7O4wv_qxuKQVUwASiLUrvtjCDh5JP_lQHZ4JJW6UhZfFi33-vabxTS7BQob6Cfm0YQI4X1BIMa9g7PaOjrtbhphqtPWgTXCc1noXhN9tr5Vs3KyB_vabp5De_Eiyd9WmZc87hZK6NAvP8SY3hGwuioEq2-Mq80HZMKf3USEk-FeoRgpKv3wtUXxJixZ4TbHCGo7aJzRK8Zar5zXpRKQTavLgU3NYwh8SlIFIIqB6VVGHUgkfI_DaQTTmgDSwZH37YL-Kt6KJXlgp2vvyJDYHXgbhaOkh3blhYNdh2mMUrk9HLWSJxxfjpzh7DWyl-fUsTisoCWyUq_zcmuP3a0waewxWzgsV-M-DvjY_Aly8EbWMb9AB9Yjmr-m2rgbHbxmGhRVqdtbtAxOW68hy8qmY5N6Yh8flEuoNCFAV-Ob0_crhtoRN_PYpIaNl3PWtRPOCWsYqd0QFBVx9dI9Tyzvh9GA0weYj73VdutrpEY1AF9ESTMYcBLVX7Pqg4wG_WAlrbCuP_ZTT3FD-XIhCg7KdpIDAecMy5BOXotnJa0Q26alPhF46tTS8lbTC9bgKcuLm7jiVibQpPC8G77xeNCRhrsLCkmfWSGx9WICoYVozSAevMzmYTSzdhbiIitLBw5nDsXO3pf2pFvHTzpXaZfQTOyl5c7-sBVcbgXJl5W4pqE__PHRJ3cOp https://lh3.googleusercontent.com/umsh/ANkjSgGvpr9mMD7A5aNbQhxRgBWeoWEdKjFxL9KIT6ySPf4NaFG7DHYpuxnhKzhwN5wVIdyG4cmf5gvtRz5FruNmiIAt-B0jPggKkEuekDypqUJpihQHu4y0fpVU5TrlJCvPAYG520_h-u_nOViEob4kJcKd7SCpUKHbXoZQg7ar347sDuqezA8Ta1Y3D81GUVdJpMjd5NGYJOLeBrmxtl1kvDrlfBCQV8w-SG1Q-Tlv4L2TjNSreUME43sk7bjtyqvAFiUWYI3PpnaPqvfbANin0pgnEEV3iOVeLcZIgBChgkNi7yq0ylutpt8C_Z3QQoX2at9nd348WszzFvK82lzOMU4B64xS4V2i9pGTkA5InfT78FTMqfF5tbzFOqHAPaavJXYBWqTaVnMN4JDP6sEJvJYNKNtEuL910dD0-yjNIXQ3MOyp-8NcejRqJshZUffOGyPj8Kn2yFO-UVO30mYU4kPs42kltjHtzFl-Qzhwb0U_umEaInOaRVj1HMW0hwzK3ghh5OoQHvQkFMiCKohThsSrE1um9qWIwK8PMEKe_UJDC7OiEhhoBR3kFF-fnxm0uyYmFNQYgyLO21MbQ0pgbEuczuLjTE7DeAH-SwfKcpxGzZHzKgUa2AtU5H4KIPoZ93TLDFZAB8Qzx29a6FAskRvt6lXswu1Km7PRSd0P32AjzaM91gbIECc7_jpGzIB5TtMjgFNLhMgi8sde1snlbHagfYp1NfghGaZp9brfpSJX-QlEKsvMiLc8lhWroipvFQVDNAGFfjr7VZF3FNQ98mcs1DQhHWHj0mO3KieyOLyjSWDsplBbNLMQQoty-27zF6bAANFdDP5Q8Cfu8r82j30_POXs14Pb https://lh3.googleusercontent.com/umsh/ANkjSgHNgjyVMxVsnpfSilt_aQTOfmQIJLnVdl1l9ZZjd0X7a-2F70IrqayhBtpYPwF_tVCEoYslcS0PplIJUNbZt1bSBjCr_s18vdLy5Ramv4E4roNFxeSnty-sKcUKMyz-7x_MMmWKu5PKDxJJc6mW0BOnJtCASBwMaaA4AcVbTYdDanlpSxxYmZhhnxb4q6GTATnn4eOcZZVjBe-Sl2vCAjeBvoWBd7a-NoYMpkqItlnQJdtr-iwZUmShtxGdIW13pb1qTSgGmtERUgKp22zqsn3BnrIbuNNiq8D26bYZrZU8fUBeSmmVzQFXCxRTfqU6__QYc2-lzbtdyxrXbVJAEdEWf_oJIRL8BjNssOtToWNWT9GrokM6bjdxPmLvvldE5hKuhMRxqblt-eRR1bnPn707_H9r6fgeJm_F9KhqH8YvxmC8MQwpE725ImrLtOjNCDlRKgNSdmSJ2J-lcumuBAQFx6vqjdljiREFVVceEV2mZXoCM4xm6CDXANo7DQwn6qXt6UFlCJFN4gJ1QXo6F7p6qFEUxEoVtmWJZExK9CXoBNacDPYM5gamKl8ddqZD_e1o2T7OrMptRwgO8h4L21Lho-u3sxGuTI2YllW2G60MslN1TmBL1A1Pj1PDxVyjoh0GEjC-_m97voEF0JgbF1snkVAOId5AlzyWXZ05wFiNsqCjq54167cF9tIW0eP37y6emAXwvqb_qzcwDOpSDWc3u1YGt3hA-zxyTmgMqI30t5r1WtHY7jKTxkFxGYSRKyArwBWy2tJh38mWD54E3Ja3BXh-OENmC3mC75052OBfMIKYMZKbDPq_cekh6H0YfUZZqS-qirloaIYukje0ilNJ9vKILzBs https://lh3.googleusercontent.com/umsh/ANkjSgHGJNMi9Noni7xQ2EKBDObACjqTvifX-PRpbHTS4hMHgq9WMu_WdvAKsVdcX2zm23YpMDa7lBJtBGjERxK_PUP_uXKvUgchiYH6U7DfbWiCQ-063LNODb_2VP5gx2uciz15HhQ4qyf5rwtTspOOrM8pOk_vdGPTYGhXgfo3tqTzmzYufMFxYJQMZw_U4lwIprMST72V67eHLXZbOq7Cmtl0ntdiY6MhsG1__qyezmVy_tGrCdyyjAwDOjtP_L94zOtcTSUjOCz82VriRCHC_NH5a69jWcH7UER3dDsqqvEEWIP_SQxFtKtPP5P_cBClf3vk1f_av1zbWDG-8xEAZ8DCQlQdhIutT_D9ensx4rrgz9ClGZK7hl3B_Dqh6SwUKlqd9_JE0GDkcBcWG9KbGihvnNC_NVMpQ0WlFl4QzSNoF-kbCJdubJEM49LqYGUY81rgxujmg09vyqF2ze7ZpsZ-nuKv9FJj_JnsIhZoGHpBFOOi0ltBWZbdedSAleewuHmAlAIxTXy1f3f1jwJFZuF2rGCwn1k5DvxFugfwJDema7hYv4P_8XhgnismtARjBpjKBzm3_AKC8Gen7kyf0u4y14T1QzkzoUqfNhjc-yDIZfQZMH5-IbGYLhlCDSus71vKtQS976ejg7yky05urebkZZQOKC6uVcdA6kHwoI-RuiplVCU3inOavJNvmbk1Uht9cE8QJXjPByYuL0ADpNvoSiQfNxu_gT4wkPy8xmBk4xdAyhJtC4RO1f86czKz7CtvmRUX97FT9gZAiPJZLGLhurbJk8ObzvtdOPC_3jSlgzUeBs509VCzhPknZqJd1s5Vnlg-64ObVnVbcuW6nlvHHcKJE-jt https://lh3.googleusercontent.com/umsh/ANkjSgGR8hN6hOmi_uZJnRwShy5whJ6bjP6xR2kBQp9UdgxszikJ-jmqcfPFE6pBrZgsqJs5pmXDbRP2411821JnZPYumxgVcb7IssGYpL6uhTLqCyf73p9pV9unbhftMvdz8BJcJYa_TxJfhJdXtg7Jq76BEn6UzykWcttfjlaqbYzji3q0BiDlCRPc3wPgLYqdEJ9rL6FNmRRHfobPp08FDpcmakLpmdUfM3LU9rPix0UdPd354kolVBV2mfsho8g2RFx_0qikj7p0samdaIseR59eZ6_T7aDpKrvUjjM9bGXiRybxfMmePENOZ03D5rcenfOa-sq2y4EmujoDtcgE2uVmHhoJDoplcL0LSGbp-j-payIW95h-8qYLEDPwhOL0NPuJ-F39HAJDCaOIt2UHize_mDvSEJmXfF0xxrC4rx-upYMJYGSnb3TYjNDuvRFR4rM0APfGxGeYenDIYlFC3TI3uBETgbRFpyADQOGNnceO2zeVlA0k0DLLn6eJJd7Hsm8lQtqI8wRwKMcgkyC4qUx3fy5LTIitoUFaRqLOIm4pCYWOaFxku8H6c3P3dJ-7rAmeUR9gf2zYdH4ZBg87nwgRv-YuJe8hGTiUvEzNFAId2d2hGjcd8se95PxIPFY8lsrVeq35R8ujVPvmKyg9tBcqWAP1sex2BUT0u49RQkfj0DFJ6aAAhyAxxy03hT6_LIcDupMpyrTuj2e8yqiuWEvA07H-j0q-Lpi0czBBGYWyzuTu4qxn124HZRXkiwuFZjQzOXt15IZYIudXecBHQVInpkKqdDqjzvCgGl9Bbdk_krlD4fmOO-7oFr5ftTM8--1QvJE9Oju1lxj4qePB1qae4ZgseFVI https://lh3.googleusercontent.com/umsh/ANkjSgHsPkJWxhPpYVBKF3rj9C2QlVhlZ_Q0c18NF_NnVPf8Sfa5CBd3J7CvU-v3FTftoh3WUbx0KU8TKFdyoCr81V4h7Zv57uKtP8YOhbx0xTrvgQIhnCOtFJWx2gxNcgsAAhYPbUiA2TlMzyZw-lYUmaI0aKSUF4HfEGh1e91zzI4EPwOVGOK947T7C7xyKp_TdnqX4RsAL4_jKXh3kyOYZ8wRNHvTQI6k-q8uOXLcrKyPR9I1bktONvWXK0RmdA7NTtO1KLhx1DzZnVuxdELrPlBgE8P6N6Rt0N6VweyIpYrnqgjfgTskyFu-YA04MhoYgEraY1J3gHRNRXpuOGx4cjrcFNiIchIvxQsNEGTTkSUpMPWF9dPc6zh6ap9YA4UPYVsTx7Ug22-_pCe3wB4BBFDq-AMoLQhYU35h9EBG_x7_d7iy441lyAtpGbgGh433qqZgLiLafMz69PkiPNAElzLGO3nEKb-v-Vb751EfxdWkYsd3GWfz-PnAxd5ENNF20GFDIK8D9mW4g3VGDwt9oeKUQ-kAlWV1ykt8GqPoe8n-1IK-nlErIPPqh58pL3skMsj4dKlkqDiz3Z-8mC0Db362ittrPhfmqoZt1Uw3WbCjRley8kfjqok9UU9kdeI-eGNL_ex5D_N_N3i7Z-uofCSpbqy8vmj-TR7hlIUJ2_3Q7GnjLtJnqVXNSFxCi5Rbn4eeYV6S_tzpOFrYbZ2lN078IlIMpanivysAc8HzD0V5cX25im3TmEAbA7P7vujRZT-Om-s092qXy0jWfc37IKOTHQmMf5rDzs26h70lzZVgPvoFVMfPB5ZmoTFcwOtvZB32cvQ3_Y1YZZHcmhWkI6R5ilTkfZG1</value>
+        </Data>
+      </ExtendedData>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          135.782622,34.593883,0
+          135.780732,34.594604,0
+          135.777036,34.595374,0
+          135.774893,34.595807,0
+          135.774499,34.593591,0
+          135.770143,34.593662,0
+          135.769789,34.588539,0
+          135.757665,34.588553,0
+          135.756614,34.588232,0
+          135.75671,34.587675,0
+          135.754935,34.587632,0
+          135.755054,34.586951,0
+          135.755989,34.585387,0
+          135.756013,34.583937,0
+          135.75582,34.584211,0
+          135.755471,34.584158,0
+          135.756418,34.582599,0
+          135.758772,34.581044,0
+          135.75893,34.579866,0
+          135.759324,34.578812,0
+          135.760742,34.576282,0
+          135.761104,34.575594,0
+          135.765441,34.574015,0
+          135.769789,34.57176,0
+          135.769826,34.569563,0
+          135.76904,34.569563,0
+          135.769125,34.569046,0
+          135.769961,34.569079,0
+          135.769891,34.567414,0
+          135.770347,34.567373,0
+          135.77025,34.566218,0
+          135.770277,34.560837,0
+          135.770636,34.558746,0
+          135.770202,34.557418,0
+          135.769299,34.556676,0
+          135.769105,34.556269,0
+          135.769164,34.555238,0
+          135.76946,34.554208,0
+          135.770531,34.553042,0
+          135.770648,34.552561,0
+          135.770733,34.547961,0
+          135.771527,34.547379,0
+          135.77481,34.547308,0
+          135.774842,34.547494,0
+          135.775523,34.547312,0
+          135.781164,34.54731,0
+          135.78468,34.544462,0
+          135.786107,34.540962,0
+          135.786048,34.537401,0
+          135.785493,34.537352,0
+          135.785742,34.534378,0
+          135.785888,34.53052,0
+          135.785925,34.526839,0
+          135.786462,34.525575,0
+          135.786902,34.525588,0
+          135.787451,34.524221,0
+          135.78759,34.520748,0
+          135.787144,34.520735,0
+          135.787234,34.516938,0
+          135.787395,34.511758,0
+          135.788366,34.511095,0
+          135.788476,34.510242,0
+          135.78926,34.509939,0
+          135.789826,34.508883,0
+          135.78961,34.502762,0
+          135.790257,34.502472,0
+          135.790639,34.499932,0
+          135.79057,34.497691,0
+          135.789905,34.495083,0
+          135.789792,34.493887,0
+          135.789873,34.492673,0
+          135.790461,34.490949,0
+          135.791236,34.488667,0
+          135.791354,34.487193,0
+          135.790576,34.486924,0
+          135.790522,34.486515,0
+          135.791166,34.486313,0
+          135.791552,34.486032,0
+          135.792482,34.485233,0
+          135.793414,34.484183,0
+          135.793225,34.483959,0
+          135.793302,34.483772,0
+          135.793466,34.483682,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
