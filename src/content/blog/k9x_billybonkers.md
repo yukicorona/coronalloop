@@ -9,7 +9,7 @@ tags: ["K9X", "カスタマイズ"]
 excerpt: "DAHON公式激推しのK9X用新アクセサリー、SCHWALBE（シュワルベ）の16インチ「Billy Bonkers（ビリー・ボンカーズ）」タイヤ。早速入手・導入してみましたので、雑多なお話とインプレッションなど。こいつはなかなかやる奴ですよ？"
 type: "post"
 draft: false
-featured_image: "/images/2024/10/20241005_132811.jpg"
+featured_image: "/images/2024/10/20241005_154013.jpg"
 ---
 
 DAHON公式激推しのK9X用新アクセサリー、SCHWALBE（シュワルベ）の16インチ「Billy Bonkers（ビリー・ボンカーズ）」タイヤ。早速入手・導入してみましたので、インプレッションと雑多なお話など。こいつはなかなかやる奴ですよ？
