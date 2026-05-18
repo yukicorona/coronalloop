@@ -33,7 +33,7 @@ featured_image: "/images/2024/11/4e83caa85835162c82106e59024f07ad.png"
 
 終点で共に天橋立ちりめん自転車道を形成する[栗田半島天橋立シーサイド自転車道](https://coronalloop.jp/amanohashidate-seaside-cycling-road/)と接続します。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/06/082.html)
   * [京都府道803号加悦岩滝自転車道線](https://ja.wikipedia.org/wiki/%E4%BA%AC%E9%83%BD%E5%BA%9C%E9%81%93803%E5%8F%B7%E5%8A%A0%E6%82%A6%E5%B2%A9%E6%BB%9D%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

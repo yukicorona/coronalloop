@@ -520,6 +520,58 @@ a.cat-label:hover {
 }
 
 /* ===================================
+   Reference List (公式参考情報)
+=================================== */
+.entry-content .ref-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: #fafafa;
+  counter-reset: ref-counter;
+}
+
+.entry-content .ref-list li {
+  counter-increment: ref-counter;
+  margin-bottom: 0;
+  padding: 0.5rem 0.875rem 0.5rem 2.75rem;
+  border-bottom: 1px solid var(--color-border-light);
+  font-size: 0.875rem;
+  line-height: 1.55;
+  position: relative;
+}
+
+.entry-content .ref-list li:last-child {
+  border-bottom: none;
+}
+
+.entry-content .ref-list li::before {
+  content: counter(ref-counter);
+  position: absolute;
+  left: 0.75rem;
+  top: 0.5rem;
+  min-width: 1.25rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--color-header-nav);
+  border-radius: 2px;
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 0.2em;
+}
+
+.entry-content .ref-list li a {
+  color: var(--color-link);
+  word-break: break-all;
+}
+
+.entry-content .ref-list li a:hover {
+  text-decoration: underline;
+}
+
+/* ===================================
    Elevation Chart
 =================================== */
 .elevation-chart {

@@ -32,7 +32,7 @@ featured_image: "/images/2024/03/20230918_145416.jpg"
 
 区間の大半が[Setouchi veloの【TS-5】](https://setouchivelo.jp/route/route-243/)に含まれています。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/08/112.html)
   * [徳島県道402号阿南徳島自転車道線 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%BE%B3%E5%B3%B6%E7%9C%8C%E9%81%93402%E5%8F%B7%E9%98%BF%E5%8D%97%E5%BE%B3%E5%B3%B6%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

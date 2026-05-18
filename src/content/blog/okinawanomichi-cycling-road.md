@@ -32,7 +32,7 @@ featured_image: "/images/2023/04/DSC_1127.jpg"
 
 [計画図](https://www.pref.okinawa.jp/site/doboku/kikaku/kikaku/documents/1704jitensyadouzu.pdf)があるのですが、今回走行した内容はこれとは若干異なります。もしかしたらこちらの計画図が正しくてこの通り走れたのかもしれませんが……。
 
-公式参考情報
+### 公式参考情報
 
   * [一般県道 玉城那覇自転車道線(_沖縄のみち自転車道_) 計画図](https://www.pref.okinawa.jp/site/doboku/kikaku/kikaku/documents/1704jitensyadouzu.pdf)
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/10/135.html)

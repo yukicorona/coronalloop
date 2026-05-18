@@ -32,7 +32,7 @@ featured_image: "/images/2024/09/20240920_123107.jpg"
 
 終点から遡る形で整備済み区間全域が[ビワイチ](https://www.biwako1.jp/basic/plan)の「低速コース」に組み込まれています。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/06/080.html)
   * [滋賀県道601号守山大津志賀自転車道線](https://ja.wikipedia.org/wiki/%E5%9F%BC%E7%8E%89%E7%9C%8C%E9%81%93157%E5%8F%B7%E5%B7%9D%E8%B6%8A%E7%8B%AD%E5%B1%B1%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

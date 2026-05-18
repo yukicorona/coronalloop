@@ -32,7 +32,7 @@ featured_image: "/images/2023/09/20230312_110725.jpg"
 
 途中県道25号（さざなみ街道）区間においてビワイチと並走、一部合流します。
 
-公式参考情報
+### 公式参考情報
 
   * [奈良県道273号大和郡山田原本橿原自転車道線](https://ja.wikipedia.org/wiki/%E6%BB%8B%E8%B3%80%E7%9C%8C%E9%81%93600%E5%8F%B7%E8%BF%91%E6%B1%9F%E5%85%AB%E5%B9%A1%E5%AE%89%E5%9C%9F%E8%83%BD%E7%99%BB%E5%B7%9D%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/06/079.html)

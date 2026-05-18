@@ -32,7 +32,7 @@ featured_image: "/images/2023/05/20220507_153811.jpg"
 
 多々羅大橋上で愛媛県側のしまなみ海道と接続します。
 
-公式参考情報
+### 公式参考情報
 
   * [SHIMAP - しまなみ海道 総合ポータルサイト](https://shimanami-cycle.or.jp/shimap/)
   * [しまなみ海道サイクリング｜【いよ観ネット】](https://www.iyokannet.jp/feature/shimanami/shimanami)

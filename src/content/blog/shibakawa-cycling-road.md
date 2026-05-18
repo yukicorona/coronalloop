@@ -46,7 +46,7 @@ featured_image: "/images/2024/07/20231229_164254.jpg"
 
 現在の終点付近から埼玉県整備の自転車歩行者道である[緑のヘルシーロード](https://www.pref.saitama.lg.jp/a0906/863/herusiii.html)が走っており50km先の利根川自転車道へ接続しています。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）東京側](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/03/051.html)
   * [国会図書館アーカイブ（旧国交省サイト）埼玉側](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/03/042.html)

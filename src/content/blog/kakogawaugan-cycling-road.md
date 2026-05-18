@@ -32,7 +32,7 @@ featured_image: "/images/2023/03/DSC_0631.jpg"
 
 途中、国道250線明姫幹線で[姫路明石自転車道](https://coronalloop.jp/himeji-akashi-cycling-road/)と接続し、権現ダム外周にて播磨中央自転車道と接続します。
 
-公式参考情報
+### 公式参考情報
 
   * [兵庫県／日常くらしを支える道路整備](https://web.pref.hyogo.lg.jp/ks11/wd13_000000003.html)
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/06/089.html)

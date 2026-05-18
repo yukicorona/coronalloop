@@ -34,7 +34,7 @@ featured_image: "/images/2024/02/20230811_175115.jpg"
 
 起点にて[江戸川自転車道（埼玉県管轄）](https://coronalloop.jp/edogawa-cycling-road/)と接続、近くの葛飾橋を渡河すると[江戸川左岸自転車道](https://coronalloop.jp/edogawa-sagan-cycling-road/)とも接続しており、長大な利根川水系サイクリングロードの東京側起点となっています。また江戸川区の「健康の道サイクリングロード」は旧江戸川から新中川方面にも伸びています。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/03/050.html)
   * [健康の道・サイクリングロード 江戸川区ホームページ](https://www.city.edogawa.tokyo.jp/e059/kuseijoho/gaiyo/shisetsuguide/bunya/sportsshisetsu/cyclingload.html)

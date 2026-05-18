@@ -142,6 +142,37 @@ function rehypeImageCaption() {
   return (tree) => walk(tree);
 }
 
+/**
+ * Rehype プラグイン: テキストが「公式参考情報」の h3 の後に続く ul に class="ref-list" を付与する。
+ * h3 と ul の間に改行テキストノードが挟まる場合も考慮する。
+ */
+function rehypeRefList() {
+  function walk(node) {
+    if (!Array.isArray(node.children)) return;
+    for (let i = 0; i < node.children.length; i++) {
+      const h = node.children[i];
+      if (
+        h.type === 'element' && h.tagName === 'h3' &&
+        h.children?.[0]?.type === 'text' &&
+        h.children[0].value.trim() === '公式参考情報'
+      ) {
+        // whitespace テキストノードを飛ばして次の要素ノードを探す
+        for (let j = i + 1; j < node.children.length; j++) {
+          const candidate = node.children[j];
+          if (candidate.type === 'text') continue;
+          if (candidate.type === 'element' && candidate.tagName === 'ul') {
+            const cls = candidate.properties.className ?? [];
+            candidate.properties.className = [...(Array.isArray(cls) ? cls : [cls]), 'ref-list'];
+          }
+          break;
+        }
+      }
+    }
+    for (const child of node.children) walk(child);
+  }
+  return (tree) => walk(tree);
+}
+
 export default defineConfig({
   site: 'https://coronalloop.jp',
   output: 'static',
@@ -150,7 +181,7 @@ export default defineConfig({
 
   markdown: {
     remarkPlugins: [remarkR2Images],
-    rehypePlugins: [rehypeResponsiveImages, rehypeImageCaption],
+    rehypePlugins: [rehypeResponsiveImages, rehypeImageCaption, rehypeRefList],
   },
 
   image: {

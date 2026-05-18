@@ -32,7 +32,7 @@ featured_image: "/images/2025/08/f2b45f27718e9268a6d683911259ebb5.png"
 
 起点850mほど北東にしんきろう自転車道の起点があり、接続可能。また、ナショナルサイクルルートである[富山湾岸自転車道](https://www.mlit.go.jp/road/bicycleuse/good-cycle-japan/national_cycle_route/toyama-bay.html)の朝日町・小矢部市ルート、または田園ルートとして一部区間が組み込まれています。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/04/059.html)
   * [富山県道370号富山庄川小矢部自転車道線](https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%B1%B1%E7%9C%8C%E9%81%93370%E5%8F%B7%E5%AF%8C%E5%B1%B1%E5%BA%84%E5%B7%9D%E5%B0%8F%E7%9F%A2%E9%83%A8%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

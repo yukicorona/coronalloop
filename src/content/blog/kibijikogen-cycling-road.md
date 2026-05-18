@@ -32,7 +32,7 @@ featured_image: "/images/2024/08/20240707_114518.jpg"
 
 起点にて[吉備路自転車道](https://coronalloop.jp/k9x-kibiji-cycling-road/)と接続します。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/07/103.html)
   * [岡山県道701号岡山賀陽自転車道線](https://ja.wikipedia.org/wiki/%E5%B2%A1%E5%B1%B1%E7%9C%8C%E9%81%93701%E5%8F%B7%E5%B2%A1%E5%B1%B1%E8%B3%80%E9%99%BD%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

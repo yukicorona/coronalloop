@@ -33,7 +33,7 @@ featured_image: "/images/2024/06/20231125_111649.jpg"
 
 起点から3kmほど長良川沿いに上ると長良川清流自転車道へ接続します。また全線が[長良川サイクリングモデルルート](https://www.pref.gifu.lg.jp/page/163214.html)の一部として整備されています。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/05/066.html)
   * [岐阜県道195号岐阜千本松原公園自転車道線](https://ja.wikipedia.org/wiki/%E5%B2%90%E9%98%9C%E7%9C%8C%E9%81%93195%E5%8F%B7%E5%B2%90%E9%98%9C%E5%8D%83%E6%9C%AC%E6%9D%BE%E5%8E%9F%E5%85%AC%E5%9C%92%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

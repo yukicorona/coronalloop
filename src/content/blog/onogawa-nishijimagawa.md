@@ -46,7 +46,7 @@ featured_image: "/images/2023/12/20230223_161635.jpg"
 
 西島川両岸を走る自転車歩行者道で、よくある車道沿い歩道の拡張ですが専用レーンが整備されしっかり整備されています。
 
-公式参考情報
+### 公式参考情報
 
   * [大野川緑陰道路 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%87%8E%E5%B7%9D%E7%B7%91%E9%99%B0%E9%81%93%E8%B7%AF)
   * [大阪市西淀川区：西淀川区の名所 ](https://www.city.osaka.lg.jp/nishiyodogawa/page/0000001039.html)

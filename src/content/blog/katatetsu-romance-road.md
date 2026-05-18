@@ -30,7 +30,7 @@ featured_image: "/images/2023/04/DSC_2442.jpg"
 
 岡山県備前市西片上駅近くの山陽新幹線高架下を起点とし、和気駅を通過後、片上鉄道の足跡を辿りながら、終点柵原ふれあい鉱山公園まで吉井川を遡ります。
 
-公式参考情報
+### 公式参考情報
 
   * [片鉄ロマン街道ルート | ハレいろ・サイクリング OKAYAMA](https://www.okayama-kanko.jp/hareiro-cycling/route05.html)
   * [片鉄ロマン街道コンプリートコース岡山県和気町観光 – wakegenic](https://wakegenic.jp/course07/)

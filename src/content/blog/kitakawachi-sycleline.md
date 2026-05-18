@@ -32,7 +32,7 @@ featured_image: "/images/2023/04/DSC_2132.jpg"
 
 淀川に出た際、鵜飼大橋で[北大阪サイクルライン](https://coronalloop.jp/kitaosaka-cycling-road/)と接続します。また、淀川沿いのコース北端から6kmほど上流へ足を伸ばすと[木津川サイクリングロード（京奈和自転車道）](https://coronalloop.jp/kidugawa-cycling-road/)が走っています。
 
-公式参考情報
+### 公式参考情報
 
   * [北河内サイクルライン - 大阪府](https://www.pref.osaka.lg.jp/dorokankyo/osakabikeroad/kitakawaticycleline.html)
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/06/084.html)

@@ -30,7 +30,7 @@ featured_image: "/images/2023/10/20230423_122622.jpg"
 
 岩手県盛岡市繋除キの多目的運動場西を起点とし、御所湖湖畔を走行した後県道1号盛岡横手線沿いに東進。堤防沿いに雫石川を下り盛岡市街中心部近くを抜け、北上川と合流後は北上川沿いを下り、終点紫波郡矢巾町西徳田字五百刈田の矢巾口交差点へ至ります。
 
-公式参考情報
+### 公式参考情報
 
   * [岩手県 - いわての自転車活用](https://www.pref.iwate.jp/kendozukuri/douro/bicycle/index.html)
   * [岩手県道502号盛岡矢巾自転車道線 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%B2%A9%E6%89%8B%E7%9C%8C%E9%81%93502%E5%8F%B7%E7%9B%9B%E5%B2%A1%E7%9F%A2%E5%B7%BE%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

@@ -32,7 +32,7 @@ featured_image: "/images/2023/03/DSC_0664-2.jpg"
 
 加西市はチャリまちかさいとし自転車に力を入れており、コースマップやレンタルサイクルなどを整備。カサイチなど大規模自転車道以外のコース売り込みにも積極的。
 
-公式参考情報
+### 公式参考情報
 
   * [兵庫県／ひょうごサイクリングモデルルート](https://web.pref.hyogo.lg.jp/ks11/hyogo_cycling_model_routes.html)
   * [兵庫県／日常くらしを支える道路整備](https://web.pref.hyogo.lg.jp/ks11/wd13_000000003.html)（全区間地図有り）

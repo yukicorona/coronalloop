@@ -35,7 +35,7 @@ featured_image: "/images/2024/04/20230919_141557.jpg"
 
 ルートの大半がナショナルルートである太平洋湾岸自転車道に組み込まれています。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/06/096.html)
   * [和歌山県道802号太地新宮自転車道線 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E9%81%93802%E5%8F%B7%E5%A4%AA%E5%9C%B0%E6%96%B0%E5%AE%AE%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

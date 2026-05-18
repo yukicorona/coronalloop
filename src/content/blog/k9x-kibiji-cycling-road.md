@@ -32,7 +32,7 @@ featured_image: "/images/2024/08/20240707_082245.jpg"
 
 中間近く、山陽自動車道高架と交差するポイントで吉備高原自転車道と接続します。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/07/103.html)
   * [岡山県道700号岡山総社自転車道線 - Wikipedia](https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E9%83%BD%E9%81%93%E3%83%BB%E5%9F%BC%E7%8E%89%E7%9C%8C%E9%81%93255%E5%8F%B7%E8%B6%B3%E7%AB%8B%E3%81%95%E3%81%84%E3%81%9F%E3%81%BE%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

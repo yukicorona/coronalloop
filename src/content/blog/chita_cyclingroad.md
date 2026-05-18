@@ -34,7 +34,7 @@ featured_image: "/images/2024/12/31c073aaf629c36cf940ca067be08db7.png"
 
 近隣に隣接する自転車道は見受けられません。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/05/074.html)
   * [愛知県道511号武豊大府自転車道線](https://ja.wikipedia.org/wiki/%E6%84%9B%E7%9F%A5%E7%9C%8C%E9%81%93511%E5%8F%B7%E6%AD%A6%E8%B1%8A%E5%A4%A7%E5%BA%9C%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

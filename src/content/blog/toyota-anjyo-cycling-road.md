@@ -33,7 +33,7 @@ featured_image: "/images/2025/01/9efb37cd068c69d89d2e8cafc97bca2b-1.png"
 
 途中三連水車手前から明治用水西井筋自転車道（11.9km）、明治川神社手前から西高根用水自転車道（4km）、安城市総合運動公園手前から明治用水中井筋自転車道（3.5km）が分岐しており、安城公園近くから花ノ木用水自転車道（3.4km）が走っています。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/05/073.html)
   * [愛知県道288号豊田安城自転車道線](https://ja.wikipedia.org/wiki/%E6%84%9B%E7%9F%A5%E7%9C%8C%E9%81%93288%E5%8F%B7%E8%B1%8A%E7%94%B0%E5%AE%89%E5%9F%8E%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

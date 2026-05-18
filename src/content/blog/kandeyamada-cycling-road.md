@@ -35,7 +35,7 @@ featured_image: "/images/2023/02/DSC_0077-2.jpg"
 
 リニューアルで休憩所等が再整備され、神戸で3つめのBE KOBEモニュメントが設置されるなど一時期の寂れ具合からはかなりの改善が見られます。が、この自転車道最大の特徴はやはり階段。
 
-公式参考情報
+### 公式参考情報
 
   * [神戸市：神出山田自転車道](https://www.city.kobe.lg.jp/a83166/20200720_kandeyamadabicycleroad.html)
   * [神出山田自転車道（兵庫県） | 【ロケ地 検索】全国ロケーションデータベース](https://www.jldb.bunka.go.jp/location/280120311/)

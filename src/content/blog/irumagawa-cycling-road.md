@@ -32,7 +32,7 @@ featured_image: "/images/2024/09/20240810_133330.jpg"
 
 起点にて[荒川自転車道](https://coronalloop.jp/arakawa-cycring-road/)と接続します。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/03/040.html)
   * [埼玉県道158号川島こども動物自然公園自転車道線](https://ja.wikipedia.org/wiki/%E5%9F%BC%E7%8E%89%E7%9C%8C%E9%81%93157%E5%8F%B7%E5%B7%9D%E8%B6%8A%E7%8B%AD%E5%B1%B1%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

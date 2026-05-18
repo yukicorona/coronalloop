@@ -32,7 +32,7 @@ featured_image: "/images/2023/06/20221104_142255.jpg"
 
 始点で綾川自転車道と、終点で土器川自転車道と接続し、香川県内の3本の自転車道を繋いでいます。
 
-公式参考情報
+### 公式参考情報
 
   * [遊歩道・自転車道｜香川県教育委員会](https://www.pref.kagawa.lg.jp/kenkyoui/hokentaiiku/sportsnet/12yuuhodou.html)
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/08/114.html)

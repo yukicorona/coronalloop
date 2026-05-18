@@ -33,7 +33,7 @@ Wikipediaでは実延長20km未供用17kmとなっているのですが、標識
 
 区間の大半が[Setouchi veloの【TS-4】](https://setouchivelo.jp/route/route-241/)に含まれています。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/08/111.html)
   * [徳島県道401号鳴門徳島自転車道線 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%BE%B3%E5%B3%B6%E7%9C%8C%E9%81%93401%E5%8F%B7%E9%B3%B4%E9%96%80%E5%BE%B3%E5%B3%B6%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

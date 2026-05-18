@@ -26,7 +26,7 @@ featured_image: "/images/2023/02/20220904_115406.jpg"
 
 兵庫県の設定するサイクリングモデルルートである「武庫川・六甲山ヒルクライムルート」に組み込まれています。同時に兵庫県が参加する[Setouchi Vélo](https://setouchivelo.jp/#top)の[【HG-2】武庫川·六甲山ヒルクライムルート](https://setouchivelo.jp/route/route-73/)でもあります。西宮市は参加してないので県主導のようです。
 
-公式参考情報
+### 公式参考情報
 
   * [西宮市：水と緑に囲まれて、季節の香りを満喫できる武庫川サイクリングロードをサイクリングしよう！](https://www.nishi.or.jp/smph/shisei/koho/citypromo/archive/city/area/naruo-koushien/mukogawacyclingroad2.html)
   * [兵庫県：武庫川下流部築堤区間の河川整備について](https://web.pref.hyogo.lg.jp/hsk06/mukogawa_jissikeikakusetsumeikai.html)

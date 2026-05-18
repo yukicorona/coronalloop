@@ -34,7 +34,7 @@ featured_image: "/images/2023/04/20211229_125814.jpg"
 
 多摩湖外周の西端から、約4kmの[野山北公園自転車道](https://www.city.musashimurayama.lg.jp/kankou/spots/1010216/index.html)という廃線跡の自転車道へ接続しています。
 
-公式参考情報
+### 公式参考情報
 
   * [多摩湖自転車歩行者道（保谷・狭山自然公園自転車道） 西東京市Web)](https://www.city.nishitokyo.lg.jp/daisuki/spot/tamakozitensya.html)
   * [狭山・境緑道｜東京都小平市公式ホームページ](https://www.city.kodaira.tokyo.jp/kurashi/000/000120.html)

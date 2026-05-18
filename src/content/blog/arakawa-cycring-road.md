@@ -32,7 +32,7 @@ featured_image: "/images/2024/07/20231229_112013.jpg"
 
 入間大橋で入間川自転車道へ、松永橋で比企自転車道へと接続します。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/03/038.html)
   * [埼玉県道155号さいたま武蔵丘陵森林公園自転車道線 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%9F%BC%E7%8E%89%E7%9C%8C%E9%81%93155%E5%8F%B7%E3%81%95%E3%81%84%E3%81%9F%E3%81%BE%E6%AD%A6%E8%94%B5%E4%B8%98%E9%99%B5%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

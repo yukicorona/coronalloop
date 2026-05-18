@@ -32,7 +32,7 @@ featured_image: "/images/2024/10/20240913_125930.jpg"
 
 コース中盤から後半の大半が福井県が推進する[わかさいくる](https://www.fuku-e.com/wakacycle/)のコースと重複します。
 
-公式参考情報
+### 公式参考情報
 
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/06/078.html)
   * [福井県道802号小浜大飯高浜自転車道線](https://ja.wikipedia.org/wiki/%E7%A6%8F%E4%BA%95%E7%9C%8C%E9%81%93802%E5%8F%B7%E5%B0%8F%E6%B5%9C%E5%A4%A7%E9%A3%AF%E9%AB%98%E6%B5%9C%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

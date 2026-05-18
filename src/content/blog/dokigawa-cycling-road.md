@@ -31,7 +31,7 @@ featured_image: "/images/2023/07/20221105_085334.jpg"
 
 始点で土器川自転車道と接続しています。
 
-公式参考情報
+### 公式参考情報
 
   * [遊歩道・自転車道｜香川県教育委員会](https://www.pref.kagawa.lg.jp/kenkyoui/hokentaiiku/sportsnet/12yuuhodou.html)
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/08/115.html)

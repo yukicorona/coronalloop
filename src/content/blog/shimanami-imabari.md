@@ -35,7 +35,7 @@ featured_image: "/images/2023/05/20220506_161509.jpg"
 
 支線が多々羅大橋上で広島県側のしまなみ海道と接続しますが、位置づけ的にはこちらが完全に本線。
 
-公式参考情報
+### 公式参考情報
 
   * [SHIMAP - しまなみ海道 総合ポータルサイト](https://shimanami-cycle.or.jp/shimap/)
   * [しまなみ海道サイクリング｜【いよ観ネット】](https://www.iyokannet.jp/feature/shimanami/shimanami)

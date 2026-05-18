@@ -33,7 +33,7 @@ featured_image: "/images/2023/09/20230319_143513.jpg"
 
 始点において直方北九州自転車道と接続し、遠賀大橋から御牧大橋までの間をひびき灘自転車道と共用しています。
 
-公式参考情報
+### 公式参考情報
 
   * [直方北九州自転車道及び遠賀宗像自転車道のご紹介 - 福岡県庁ホームページ](https://www.pref.fukuoka.lg.jp/contents/kitakyu-pw-jitensyadou.html)
   * [国会図書館アーカイブ（旧国交省サイト）](https://warp.da.ndl.go.jp/info:ndljp/pid/10369770/www1.mlit.go.jp/road/road/bicycle/road/09/123.html)

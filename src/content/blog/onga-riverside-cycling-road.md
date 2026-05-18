@@ -32,7 +32,7 @@ featured_image: "/images/2023/09/20230319_111546-scaled.jpg"
 
 終点において直方北九州自転車道と接続します。
 
-公式参考情報
+### 公式参考情報
 
   * [【道路】 遠賀川沿いの自転車道（３路線）を紹介します。 - 福岡県庁ホームページ](https://www.pref.fukuoka.lg.jp/contents/onga-3cycling-roads-r2.html)
   * [福岡県道474号飯塚直方自転車道線](https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B2%A1%E7%9C%8C%E9%81%93474%E5%8F%B7%E9%A3%AF%E5%A1%9A%E7%9B%B4%E6%96%B9%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%81%93%E7%B7%9A)

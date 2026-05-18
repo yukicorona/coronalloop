@@ -33,7 +33,7 @@ featured_image: "/images/2024/07/20240503_164006.jpg"
 
 隣接する自転車道等はありません。
 
-公式参考情報
+### 公式参考情報
 
   * [兵庫県／アワイチ（淡路島一周サイクリングルート）の取り組み↗](https://web.pref.hyogo.lg.jp/awk11/awaichi_torikumi.html)
   * [モデルコース | 淡路島サイクルツーリズム↗](https://www.awajishima-kanko.jp/cycling/modelcourse_1.html)
