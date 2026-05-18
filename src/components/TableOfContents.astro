@@ -13,6 +13,89 @@ const { headings } = Astro.props;
 const toc = headings.filter(h => h.depth === 2 || h.depth === 3);
 ---
 
+<style>
+/* ===================================
+   Table of Contents
+=================================== */
+.toc-wrap {
+  margin: 0 0 1.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: #fafafa;
+  font-size: 0.9rem;
+}
+
+.toc-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  border-bottom: 1px solid transparent;
+}
+
+.toc-wrap[open] .toc-title {
+  border-bottom-color: var(--color-border);
+}
+
+.toc-title::-webkit-details-marker { display: none; }
+
+.toc-title::before {
+  content: '▶';
+  font-size: 0.65em;
+  transition: transform 0.15s;
+}
+
+.toc-wrap[open] .toc-title::before {
+  transform: rotate(90deg);
+}
+
+.toc-nav {
+  padding: 0.6rem 1rem 0.75rem;
+}
+
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-item {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.toc-item + .toc-item {
+  margin-top: 0.25rem;
+}
+
+.toc-h3 {
+  padding-left: 1.25rem;
+}
+
+.toc-link {
+  color: var(--color-link);
+  text-decoration: none;
+  font-size: 0.875rem;
+  display: inline-block;
+  padding: 0.1em 0;
+  border-bottom: 1px solid transparent;
+  transition: color 0.1s;
+}
+
+.toc-link:hover {
+  text-decoration: underline;
+}
+
+.toc-link--active {
+  color: var(--color-text);
+  font-weight: 600;
+}
+</style>
+
 {toc.length >= 3 && (
   <details class="toc-wrap" open>
     <summary class="toc-title">目次</summary>

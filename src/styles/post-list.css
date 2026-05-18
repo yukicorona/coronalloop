@@ -1,0 +1,228 @@
+/* ===================================
+   Taxonomy Pages (category / tag)
+=================================== */
+.taxonomy-count {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+/* ===================================
+   Index / Post List
+=================================== */
+.page-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-card {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--color-border-light);
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  transition: background 0.2s;
+  border-radius: 4px;
+  margin: 0 -0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.post-card:hover {
+  background: #f5f5f5;
+}
+
+.post-card:last-child {
+  border-bottom: none;
+}
+
+.post-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.post-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.3rem;
+}
+
+.post-card-date {
+  font-variant-numeric: tabular-nums;
+}
+
+.post-card-cat {
+  display: inline-block;
+  background: var(--color-cat-bg);
+  color: #fff;
+  padding: 0.1em 0.5em;
+  border-radius: 2px;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+a.post-card-cat {
+  text-decoration: none;
+}
+
+a.post-card-cat:hover {
+  opacity: 0.82;
+  text-decoration: none;
+}
+
+.post-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 0.35rem;
+}
+
+.post-card-title a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.post-card-title a:hover {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
+.post-card-excerpt {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin: 0;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.post-card-thumb-link {
+  flex-shrink: 0;
+  display: block;
+  border-radius: 3px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.post-card-thumb {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  display: block;
+  border-radius: 3px;
+  transition: transform 0.4s ease, opacity 0.2s;
+}
+
+.post-card-thumb-link:hover .post-card-thumb {
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+
+.post-card-thumb--placeholder {
+  width: 120px;
+  height: 80px;
+  background: #f0f0f0;
+  border: 1px dashed var(--color-border);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+@media (max-width: 480px) {
+  .post-card-thumb-link {
+    display: none;
+  }
+}
+
+/* ===================================
+   Pagination
+=================================== */
+.pagination {
+  margin-top: 2rem;
+}
+
+.pagination-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.pagination-pages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  justify-content: center;
+}
+
+.pagination-page {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  height: 2rem;
+  padding: 0 0.4rem;
+  font-size: 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  color: var(--color-text);
+  text-decoration: none;
+  background: var(--color-white);
+  transition: background 0.12s;
+}
+
+.pagination-page:hover {
+  background: #f4f5f7;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.pagination-page--current {
+  background: var(--color-header-nav);
+  border-color: var(--color-header-nav);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.pagination-btn {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  text-decoration: none;
+  white-space: nowrap;
+  background: var(--color-white);
+  color: var(--color-text);
+  transition: background 0.12s;
+}
+
+.pagination-btn:hover {
+  background: #f4f5f7;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.pagination-btn--disabled {
+  color: var(--color-text-muted);
+  cursor: default;
+}

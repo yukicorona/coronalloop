@@ -1,0 +1,103 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { formatDate } from '../../utils/date';
+import { toSlug } from '../../utils/taxonomy';
+import { r2ThumbUrl } from '../../utils/images';
+
+export async function getStaticPaths({ paginate }: { paginate: Function }) {
+  const allEntries = await getCollection('blog', ({ data }) => !data.draft);
+  const posts = allEntries
+    .filter(e => e.data.type === 'post')
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+  return paginate(posts, { pageSize: 10 });
+}
+
+const { page } = Astro.props;
+const currentPage = page.currentPage;
+const totalPages = page.lastPage;
+const pageLabel = currentPage > 1 ? `（${currentPage}ページ目）` : '';
+---
+
+<BaseLayout
+  title={`記事一覧${pageLabel}`}
+  description={`ころなるーぷの記事一覧です。チャリとゲームとITな日常を綴っています。`}
+>
+  <nav class="breadcrumb" aria-label="パンくず">
+    <ol>
+      <li><a href="/">ホーム</a></li>
+      <li aria-current="page">記事一覧</li>
+    </ol>
+  </nav>
+
+  <h1 class="page-heading">
+    記事一覧
+    {currentPage > 1 && <span class="taxonomy-count">（{currentPage} / {totalPages} ページ）</span>}
+  </h1>
+
+  <ul class="post-list">
+    {page.data.map((post: any) => (
+      <li class="post-card">
+        <a href={`/${post.slug}/`} class="post-card-thumb-link" tabindex="-1" aria-hidden="true">
+          {post.data.featured_image ? (
+            <img
+              src={r2ThumbUrl(post.data.featured_image)}
+              alt=""
+              class="post-card-thumb"
+              loading="lazy"
+              width="120"
+              height="80"
+            />
+          ) : (
+            <div class="post-card-thumb post-card-thumb--placeholder">
+              <span aria-hidden="true">🚲</span>
+            </div>
+          )}
+        </a>
+        <div class="post-card-body">
+          <div class="post-card-meta">
+            <span class="post-card-date">{formatDate(post.data.date)}</span>
+            {(post.data.categories ?? []).map((cat: string) => (
+              <a href={`/category/${toSlug(cat)}/`} class="post-card-cat">{cat}</a>
+            ))}
+          </div>
+          <h2 class="post-card-title">
+            <a href={`/${post.slug}/`}>{post.data.title}</a>
+          </h2>
+          {post.data.excerpt && (
+            <p class="post-card-excerpt">{post.data.excerpt}</p>
+          )}
+        </div>
+      </li>
+    ))}
+  </ul>
+
+  {totalPages > 1 && (
+    <nav class="pagination" aria-label="ページネーション">
+      <div class="pagination-inner">
+        {page.url.prev ? (
+          <a href={page.url.prev} class="pagination-btn pagination-btn--prev">← 新しい記事</a>
+        ) : (
+          <span class="pagination-btn pagination-btn--disabled">← 新しい記事</span>
+        )}
+
+        <div class="pagination-pages">
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map(n => {
+            const href = n === 1 ? '/posts/' : `/posts/${n}/`;
+            return n === currentPage ? (
+              <span class="pagination-page pagination-page--current" aria-current="page">{n}</span>
+            ) : (
+              <a href={href} class="pagination-page">{n}</a>
+            );
+          })}
+        </div>
+
+        {page.url.next ? (
+          <a href={page.url.next} class="pagination-btn pagination-btn--next">古い記事 →</a>
+        ) : (
+          <span class="pagination-btn pagination-btn--disabled">古い記事 →</span>
+        )}
+      </div>
+    </nav>
+  )}
+</BaseLayout>
