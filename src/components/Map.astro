@@ -1,5 +1,7 @@
 ---
 // Map.astro: Leafletマップコンポーネント
+import 'leaflet/dist/leaflet.css';
+
 // - propsでconfigを渡した場合: 指定configのマップを描画
 // - propsなしの場合: ページ内の全 .leaflet-map-container を初期化
 interface LeafletLayerConfig { type: 'kml' | 'gpx'; src: string; color?: string; }
@@ -25,11 +27,30 @@ const { config } = Astro.props;
 )}
 
 <script>
-  // window.load を使用: 画像等のリソース読み込み完了後に地図を初期化し
-  // 画像読み込みによるレイアウトシフト後のズレを防ぐ
-  window.addEventListener('load', () => {
-    if (document.querySelector('.leaflet-map-container')) {
-      import('../scripts/leaflet-init').then(({ initLeafletMaps }) => initLeafletMaps());
+  // ページ内の全 .leaflet-map-container を初期化
+  const runInit = async () => {
+    // コンテナが存在するか確認
+    const containers = document.querySelectorAll('.leaflet-map-container');
+    if (containers.length === 0) return;
+
+    try {
+      const { initLeafletMaps } = await import('../scripts/leaflet-init');
+      await initLeafletMaps();
+    } catch (err) {
+      console.error('Failed to initialize Leaflet maps:', err);
     }
-  });
+  };
+
+  // すでにDOMが準備できている場合は即時実行、そうでなければイベントを待つ
+  if (document.readyState !== 'loading') {
+    runInit();
+  } else {
+    // load だと遅すぎる場合があるため DOMContentLoaded を優先し、
+    //念のため load もフォールバックとして設定
+    window.addEventListener('DOMContentLoaded', runInit);
+    window.addEventListener('load', runInit);
+  }
+
+  // Astro View Transitions を使用している場合の対応
+  document.addEventListener('astro:page-load', runInit);
 </script>

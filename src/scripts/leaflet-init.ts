@@ -1,4 +1,3 @@
-import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
 // Fix default marker icon paths for bundled leaflet
@@ -374,70 +373,88 @@ export async function initLeafletMaps(): Promise<void> {
     const height = config.height ?? 450;
     container.style.height = `${height}px`;
 
-    const map = L.map(container, {
-      zoomControl: config.zoomcontrol ?? true,
-    });
+    // すでに初期化済みの場合はスキップ（HMR対策）
+    if ((container as any)._leaflet_id) {
+      console.log('Leaflet: Container already initialized, skipping.');
+      continue;
+    }
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      maxZoom: 18,
-    }).addTo(map);
+    try {
+      const map = L.map(container, {
+        zoomControl: config.zoomcontrol ?? true,
+      });
 
-    const allLatLngs: L.LatLng[] = [];
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 18,
+      }).addTo(map);
 
-    // Add layers (KML/GPX)
-    const layers = config.layers ?? [];
-    for (const layer of layers) {
-      const text = await fetchCached(layer.src);
-      if (!text) continue;
-      const coords = parseCoordinates(text, layer.type);
-      if (coords.length > 0) {
-        const polyline = L.polyline(coords, {
-          color: layer.color ?? 'blue',
-          weight: 3,
-          opacity: 0.8,
-        }).addTo(map);
-        allLatLngs.push(...coords);
-        if (!config.fitbounds && layers.length === 1) {
-          map.fitBounds(polyline.getBounds(), { padding: [20, 20], animate: false });
+      const allLatLngs: L.LatLng[] = [];
+
+      // Add layers (KML/GPX)
+      const layers = config.layers ?? [];
+      for (const layer of layers) {
+        try {
+          const text = await fetchCached(layer.src);
+          if (!text) continue;
+          const coords = parseCoordinates(text, layer.type);
+          if (coords.length > 0) {
+            const polyline = L.polyline(coords, {
+              color: layer.color ?? 'blue',
+              weight: 3,
+              opacity: 0.8,
+            }).addTo(map);
+            allLatLngs.push(...coords);
+            if (!config.fitbounds && layers.length === 1) {
+              map.fitBounds(polyline.getBounds(), { padding: [20, 20], animate: false });
+            }
+          }
+        } catch (err) {
+          console.warn(`Leaflet: Error loading layer ${layer.src}:`, err);
         }
       }
-    }
 
-    // Add markers
-    const markers = config.markers ?? [];
-    for (const markerConfig of markers) {
-      const latLng = L.latLng(markerConfig.lat, markerConfig.lng);
-      const marker = L.marker(latLng).addTo(map);
-      if (markerConfig.label) {
-        const popupContent = markerConfig.anchor
-          ? `<a href="${markerConfig.anchor}" style="color:#0066cc;">${markerConfig.label}</a>`
-          : markerConfig.label;
-        marker.bindPopup(popupContent);
+      // Add markers
+      const markers = config.markers ?? [];
+      for (const markerConfig of markers) {
+        const latLng = L.latLng(markerConfig.lat, markerConfig.lng);
+        const marker = L.marker(latLng).addTo(map);
+        if (markerConfig.label) {
+          const popupContent = markerConfig.anchor
+            ? `<a href="${markerConfig.anchor}" style="color:#0066cc;">${markerConfig.label}</a>`
+            : markerConfig.label;
+          marker.bindPopup(popupContent);
+        }
+        allLatLngs.push(latLng);
       }
-      allLatLngs.push(latLng);
-    }
 
-    // Fit bounds
-    if (config.fitbounds && allLatLngs.length > 0) {
-      map.fitBounds(L.latLngBounds(allLatLngs), { padding: [20, 20], animate: false });
-    } else if (allLatLngs.length === 0) {
-      map.setView([36.0, 136.0], 6);
-    } else if (!config.fitbounds && layers.length === 0 && allLatLngs.length > 0) {
-      map.fitBounds(L.latLngBounds(allLatLngs), { padding: [20, 20], animate: false });
-    }
-
-    setTimeout(() => map.invalidateSize({ pan: false }), 0);
-
-    // Elevation chart
-    if (config.elevation?.src) {
-      const src = config.elevation.src;
-      const type = src.endsWith('.gpx') ? 'gpx' : 'kml';
-      const xml = await fetchCached(src);
-      if (xml) {
-        const profile = parseElevationProfile(xml, type);
-        renderElevationChart(container, profile, map);
+      // Fit bounds
+      if (config.fitbounds && allLatLngs.length > 0) {
+        map.fitBounds(L.latLngBounds(allLatLngs), { padding: [20, 20], animate: false });
+      } else if (allLatLngs.length === 0) {
+        map.setView([36.0, 136.0], 6);
+      } else if (!config.fitbounds && layers.length === 0 && allLatLngs.length > 0) {
+        map.fitBounds(L.latLngBounds(allLatLngs), { padding: [20, 20], animate: false });
       }
+
+      setTimeout(() => map.invalidateSize({ pan: false }), 0);
+
+      // Elevation chart
+      if (config.elevation?.src) {
+        try {
+          const src = config.elevation.src;
+          const type = src.endsWith('.gpx') ? 'gpx' : 'kml';
+          const xml = await fetchCached(src);
+          if (xml) {
+            const profile = parseElevationProfile(xml, type);
+            renderElevationChart(container, profile, map);
+          }
+        } catch (err) {
+          console.warn('Leaflet: Elevation chart error:', err);
+        }
+      }
+    } catch (err) {
+      console.error('Leaflet: Initialization error:', err);
     }
   }
 }

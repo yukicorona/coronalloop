@@ -1,7 +1,7 @@
 ---
 title: "マイチャリ紹介"
 date: 2023-02-11T14:56:11+09:00
-updated: 2024-11-06T23:04:45+09:00
+updated: 2026-05-20T20:24:00+09:00
 postSlug: "mybicycle"
 postId: 17
 categories: ["自転車"]
@@ -9,6 +9,7 @@ tags: ["K3", "K9X", "N8", "カスタマイズ", "折りたたみ自転車"]
 excerpt: "現在乗ってる折りたたみ自転車とそのカスタム状況のご紹介。 保有は3台。使用率はK9X>K3>N2。"
 type: "post"
 draft: false
+featured_image: "/images/2026/05/my_bicycle_hero.png"
 ---
 
 現在乗ってる折りたたみ自転車とそのカスタム状況のご紹介。  

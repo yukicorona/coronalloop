@@ -1,11 +1,12 @@
 ---
 title: "プロフィール"
 date: 2023-03-21T23:56:39+09:00
-updated: 2024-10-10T14:44:05+09:00
+updated: 2026-05-20T20:24:00+09:00
 postSlug: "profile"
 postId: 112
 type: "page"
 draft: false
+featured_image: "/images/2026/05/profile_hero.png"
 ---
 
 単に「ころな」または「結城ころな」を名乗っています。イラストは便宜上、男が「結城ころな」で女の子が「コロナ」。受肉しちゃう人も多い昨今ですが昔ながらの看板娘スタイルでやっております。
